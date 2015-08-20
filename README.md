@@ -17,16 +17,7 @@ Usage
 
 The directory *"solutions"* includes all solutions in Markdown text format. 
 
-Other files are used to maintain the homepage.
-
-Bacause `latex` text can't be rendered by github's webpage style, for more details of this project, please visit [Project-euler-solutions -- Github](https://dhdave.github.io/project-euler-solutions/ "project-euler-solutions").
-
 For more details of these problems, please visit [projecteuler](https://projecteuler.net/ "projecteuler").
-
-Homepage
---------
-
-[Project-euler-solutions -- Github](http://he-tao.github.io/project-euler-solutions/)
 
 License
 -------
