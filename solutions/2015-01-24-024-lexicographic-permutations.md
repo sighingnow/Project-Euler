@@ -33,6 +33,8 @@ $$ 012\ 021\ 102\ 120\ 201\ 210 $$
 
 通过DFS算法验证，代码如下:
 
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-

@@ -20,6 +20,11 @@ What is the largest prime factor of the number 600851475143 ?
 [题目3：找出一个合数的最大质数因子](http://pe.spiritzhang.com/index.php/2011-05-11-09-44-54/4-3 "题目3")
 
 ## 题解(Python)
+
+答案(answer): 6857
+
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8

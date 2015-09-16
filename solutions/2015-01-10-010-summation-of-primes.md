@@ -20,6 +20,11 @@ Find the sum of all the primes below two million.
 [题目10：计算两百万以下所有质数的和](http://pe.spiritzhang.com/index.php/2011-05-11-09-44-54/11-10 "题目10")
 
 ## 题解(Python)
+
+答案(answer): 142913828922
+
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8

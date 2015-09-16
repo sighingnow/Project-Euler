@@ -43,6 +43,8 @@ $$ 9474 = 9^4 + 4^4 + 7^4 + 4^4 $$
 
 答案(answer): 443839
 
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8

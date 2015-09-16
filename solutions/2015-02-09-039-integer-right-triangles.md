@@ -29,6 +29,8 @@ For which value of p ≤ 1000, is the number of solutions maximised?
 
 答案(answer): 840
 
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-

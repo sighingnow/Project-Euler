@@ -31,6 +31,8 @@ What 12-digit number do you form by concatenating the three terms in this sequen
 
 答案(answer): 296962999629
 
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-

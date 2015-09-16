@@ -29,6 +29,8 @@ How many circular primes are there below one million?
 
 答案(answer): 212
 
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-

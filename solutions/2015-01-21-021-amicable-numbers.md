@@ -32,6 +32,8 @@ d(n)定义为n 的所有真因子（小于 n 且能整除 n 的整数）之和�
 
 答案(answer): 31626
 
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-

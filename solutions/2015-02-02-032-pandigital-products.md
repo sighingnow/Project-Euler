@@ -33,6 +33,8 @@ Find the sum of all products whose multiplicand/multiplier/product identity can 
 
 答案(answer): 45228
 
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-

@@ -37,6 +37,11 @@ Find the product abc.
 [题目9：找出唯一的满足a + b + c = 1000的毕达哥拉斯三元组{a, b, c}](http://pe.spiritzhang.com/index.php/2011-05-11-09-44-54/10-9a--b--c--1000a-b-c "题目9")
 
 ## 题解(Python)
+
+答案(answer): 31875000
+
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8

@@ -38,6 +38,8 @@ $$ 41 = 2 + 3 + 5 + 7 + 11 + 13 $$
 
 答案(answer): 997651
 
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-

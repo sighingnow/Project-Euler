@@ -21,6 +21,10 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 
 ## 题解
 
+答案(answer): 233168
+
++ Python
+
 ```python
 ans = sum([i if(i%3==0 or i%5==0) else 0 for i in range(0, 1000)])
 ```

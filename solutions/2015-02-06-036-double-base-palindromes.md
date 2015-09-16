@@ -31,6 +31,8 @@ Find the sum of all numbers, less than one million, which are palindromic in bas
 
 答案(answer): 872187
 
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-

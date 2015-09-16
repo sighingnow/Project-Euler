@@ -30,6 +30,8 @@ How many such routes are there through a 20×20 grid?
 
 分析：从一个定点到对角的顶点，必然需要`m+n`步，从中选出`m`步向下走，另外`n`步向右走即可，因此答案为$$ans = \binom{m+n}{m} = \binom{m+m}{n}$$ 在本题中，最终的结果为：$$\frac {40!}{20! \times 20!}$$
 
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8

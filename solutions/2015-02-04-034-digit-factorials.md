@@ -31,6 +31,8 @@ Note: as 1! = 1 and 2! = 2 are not sums they are not included.
 
 答案(answer): 40730
 
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-

@@ -54,6 +54,8 @@ $$ w = (y+\lfloor{y/4}\rfloor+\lfloor{c/4}\rfloor-2c+\lfloor{26(m+1)/10}\rfloor+
 
 答案(answer): 171
 
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-

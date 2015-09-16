@@ -49,6 +49,8 @@ $$ 19 + 11 + 25 = 55 = t10 $$
 
 答案(answer): 162
 
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-

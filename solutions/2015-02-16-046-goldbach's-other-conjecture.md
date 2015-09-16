@@ -41,7 +41,9 @@ Christian Goldbach 提出每个奇合数都可以写作一个质数与一个平�
 
 ## 题解
 
-答案(answer): 
+答案(answer): 5777
+
++ Python
 
 ```python
 #! /usr/bin/env python

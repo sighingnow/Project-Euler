@@ -23,6 +23,8 @@ How many 20 digit numbers n (without any leading zero) exist such that no three 
 
 答案(answer): 378158756814587
 
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
@@ -45,6 +47,8 @@ if __name__ == '__main__':
 
 # vim: set sw=4, ts=4
 ```
+
++ Haskell
 
 ```haskell
 main = do

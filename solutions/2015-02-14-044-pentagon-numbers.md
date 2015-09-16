@@ -33,6 +33,8 @@ $$ 1, 5, 12, 22, 35, 51, 70, 92, 117, 145, ... $$
 
 答案(answer): 5482660
 
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-

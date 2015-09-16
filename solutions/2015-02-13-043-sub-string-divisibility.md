@@ -49,6 +49,8 @@ Find the sum of all 0 to 9 pandigital numbers with this property.
 
 答案(answer): 16695334890
 
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-

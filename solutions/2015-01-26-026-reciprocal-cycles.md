@@ -54,6 +54,8 @@ Find the value of d < 1000 for which 1/d contains the longest recurring cycle in
 
 答案(answer): 983
 
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-

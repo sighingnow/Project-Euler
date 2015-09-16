@@ -9,9 +9,9 @@ layout: post
 
 Take the number 192 and multiply it by each of 1, 2, and 3:
 
-    192 × 1 = 192
-    192 × 2 = 384
-    192 × 3 = 576
+    192 * 1 = 192
+    192 * 2 = 384
+    192 * 3 = 576
 
 By concatenating each product we get the 1 to 9 pandigital, 192384576. We will call 192384576 the concatenated product of 192 and (1,2,3)
 <!--more-->
@@ -25,9 +25,9 @@ What is the largest 1 to 9 pandigital 9-digit number that can be formed as the c
 
 将192与1,2,3分别相乘得到：
 
-    192 × 1 = 192
-    192 × 2 = 384
-    192 × 3 = 576
+    192 * 1 = 192
+    192 * 2 = 384
+    192 * 3 = 576
 
 将这三个乘积连接起来我们得到一个1到9的pandigital数， 192384576。我们称 192384576是192和 (1,2,3)的连接积。
 
@@ -42,6 +42,8 @@ What is the largest 1 to 9 pandigital 9-digit number that can be formed as the c
 分析：首先，要找最大的数，那么用来拼接的项应当尽量少，n大于1，那么最少两项。枚举即可。
 
 答案(answer): 932718654
+
++ Python
 
 ```python
 #! /usr/bin/env python

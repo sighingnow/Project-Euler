@@ -48,6 +48,8 @@ What is the sum of the numbers on the diagonals in a 1001 by 1001 spiral formed 
 
 答案(answer): 669171001
 
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8

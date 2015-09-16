@@ -24,6 +24,11 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 [题目2：在斐波那契数列中，找出4百万以下的项中值为偶数的项之和](http://pe.spiritzhang.com/index.php/2011-05-11-09-44-54/3-24 "题目2")
 
 ## 题解
+
+答案(answer): 4613732
+
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8

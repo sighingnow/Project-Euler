@@ -33,6 +33,8 @@ Find the sum of all the positive integers which cannot be written as the sum of 
 
 答案(answer): 4179871
 
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-

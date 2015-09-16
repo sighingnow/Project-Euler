@@ -40,6 +40,8 @@ Find the next triangle number that is also pentagonal and hexagonal.
 
 答案(answer): 1533776805
 
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-

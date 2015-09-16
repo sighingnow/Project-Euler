@@ -31,6 +31,8 @@ $$ n! = n \times (n − 1) \times ... \times 3 \times 2  1 $$
 
 答案(answer): 648
 
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8

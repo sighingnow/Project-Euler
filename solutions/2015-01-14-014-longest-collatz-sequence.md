@@ -39,6 +39,8 @@ $$ 13 → 40 → 20 → 10 → 5 → 16 → 8 → 4 → 2 → 1 $$
 
 答案(answer): 837799
 
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8

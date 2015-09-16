@@ -45,6 +45,8 @@ If all the numbers from 1 to 1000 (one thousand) inclusive were written out in w
 
 为整百时，会少一个and
 
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8

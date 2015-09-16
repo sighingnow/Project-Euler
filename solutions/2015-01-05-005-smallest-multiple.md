@@ -20,6 +20,11 @@ What is the smallest positive number that is evenly divisible by all of the numb
 [题目5：找出最小的能被1-20中每个数整除的数](http://pe.spiritzhang.com/index.php/2011-05-11-09-44-54/6-51-20 "题目5")
 
 ## 题解(Python)
+
+答案(answer): 232792560
+
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8

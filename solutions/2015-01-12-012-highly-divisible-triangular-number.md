@@ -56,6 +56,8 @@ $$ 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, ... $$
 
 答案(answer): 76576500
 
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8

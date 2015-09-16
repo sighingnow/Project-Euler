@@ -85,6 +85,8 @@ Find the maximum total from top to bottom of the triangle below:
 
 答案(answer): 1074
 
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8

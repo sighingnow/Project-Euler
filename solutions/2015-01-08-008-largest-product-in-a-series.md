@@ -64,6 +64,11 @@ Find the thirteen adjacent digits in the 1000-digit number that have the greates
 [题目8：找出这个1000位数字中连续13个数字乘积的最大值](http://pe.spiritzhang.com/index.php/2011-05-11-09-44-54/9-810005 "题目8")
 
 ## 题解(Python)
+
+答案(answer): 23514624000
+
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8

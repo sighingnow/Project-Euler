@@ -20,6 +20,11 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 [题目4：找出由两个三位数乘积构成的回文](http://pe.spiritzhang.com/index.php/2011-05-11-09-44-54/5-4 "题目4")
 
 ## 题解(Python)
+
+答案(answer): 906609
+
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8

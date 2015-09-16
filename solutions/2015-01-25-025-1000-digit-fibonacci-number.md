@@ -67,6 +67,8 @@ $$ Fn = Fn−1 + Fn−2, F1 = 1, F2 = 1. $$
 
 答案(answer): 4782
 
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-

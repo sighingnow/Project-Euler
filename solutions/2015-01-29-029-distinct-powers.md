@@ -43,6 +43,8 @@ ab 在 2 ≤ a ≤ 100，2 ≤ b ≤ 100 下生成的序列中有多少个不同
 
 答案(answer): 9183
 
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8

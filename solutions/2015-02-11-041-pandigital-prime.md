@@ -43,6 +43,8 @@ What is the largest _n-digit_ pandigital prime that exists?
 
 答案(answer): 7652413
 
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-

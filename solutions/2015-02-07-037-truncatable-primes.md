@@ -29,6 +29,8 @@ NOTE: 2, 3, 5, and 7 are not considered to be truncatable primes.
 
 答案(answer): 748317
 
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-

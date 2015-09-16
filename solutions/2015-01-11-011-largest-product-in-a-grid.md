@@ -71,6 +71,8 @@ What is the product of four adjacent numbers in the same direction (up, down, le
 
 答案(answer): 70600674
 
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8

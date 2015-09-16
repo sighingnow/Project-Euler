@@ -49,6 +49,8 @@ $$ n^2 + n + 41 $$
 
 答案(answer): -59231
 
++ Python
+
 ```python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-

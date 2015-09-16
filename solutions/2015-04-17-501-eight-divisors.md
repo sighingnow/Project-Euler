@@ -23,12 +23,3 @@ Find f(10<sup>12</sup>).
 ## 题解 
 
 答案(answer): 197912312715
-
-```python
-#! /usr/bin/env python
-# -*- coding: utf-8 -*-
-
-if __name__ == '__main__':
-
-# vim: set sw=4, ts=4
-```
