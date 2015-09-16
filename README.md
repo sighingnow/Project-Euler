@@ -25,7 +25,7 @@ Now
 All problems can be found at [Project Euler](https://projecteuler.net/).
 
 | NO.  |   State            |   Answer           |   Language                              |
-|:----:|:------------------:|:------------------:|:---------------------------------------:|
+|:----:|:------------------:|--------------------|:---------------------------------------:|
 | 001  | :white_check_mark: | 233168             | Python                                  |
 | 002  | :white_check_mark: | 4613732            | Python                                  |
 | 003  | :white_check_mark: | 6857               | Python                                  |
