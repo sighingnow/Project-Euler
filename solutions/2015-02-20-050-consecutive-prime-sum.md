@@ -1,6 +1,6 @@
 ---
 title: Problem 50. Consecutive prime sum
-author: DHDave
+author: He Tao
 date: 2015-02-20
 layout: post
 ---
@@ -46,15 +46,16 @@ $$ 41 = 2 + 3 + 5 + 7 + 11 + 13 $$
 
 from math import sqrt
 
-def prime(n):
-    if n == 2 or n == 3:
-        return True
-    for x in range(2, int(sqrt(n))+1):
-        if n % x == 0:
-            return False
-    return True
+def euler_50():
 
-if __name__ == '__main__':
+    def prime(n):
+        if n == 2 or n == 3:
+            return True
+        for x in range(2, int(sqrt(n))+1):
+            if n % x == 0:
+                return False
+        return True
+
     primes = []
     for i in range(2, 1000000):
         if prime(i):
@@ -72,6 +73,9 @@ if __name__ == '__main__':
             if total in primes and maxlen < l:
                 maxlen, x = l, total
     print(x, maxlen)
+
+if __name__ == '__main__':
+    print(euler_50())
 
 # vim: set sw=4, ts=4
 ```

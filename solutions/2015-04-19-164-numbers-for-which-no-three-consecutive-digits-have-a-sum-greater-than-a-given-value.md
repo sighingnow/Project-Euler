@@ -1,6 +1,6 @@
 ---
 title: Problem 164. Numbers for which no three consecutive digits have a sum greater than a given value
-author: DHDave
+author: He Tao
 date: 2015-02-20
 layout: post
 ---
@@ -29,21 +29,22 @@ How many 20 digit numbers n (without any leading zero) exist such that no three 
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-dp = [[[0 for k in range(0, 20)] for j in range(0, 10)] for i in range(0, 10)]
+def euler_164():
+    mem = [[[0 for k in range(0, 20)] for j in range(0, 10)] for i in range(0, 10)]
 
-def solve(a, b, s):
-    if s == 0:
-        return 1
-    if dp[a][b][s] == 0:
-        for i in range(0, 9-(a+b)+1):
-            dp[a][b][s] += solve(b, i, s-1)
-    return dp[a][b][s]
+    def dp(a, b, s):
+        '''memorize'''
+        if s == 0:
+            return 1
+        if mem[a][b][s] == 0:
+            for i in range(0, 9-(a+b)+1):
+                mem[a][b][s] += dp(b, i, s-1)
+        return mem[a][b][s]
+
+    return sum([dp(0, i, 20-1) for i in range(1, 10)])
 
 if __name__ == '__main__':
-    ans = 0
-    for i in range(1, 10):
-        ans += solve(0, i, 20-1)
-    print(ans)
+    print(euler_164())
 
 # vim: set sw=4, ts=4
 ```
@@ -51,13 +52,13 @@ if __name__ == '__main__':
 + Haskell
 
 ```haskell
-main = do
-    print $ sum [dp !! a !! b | a <- [1..9], b <- [0..9-a]]
+main :: IO ()
+main = print $ euler_164
 
-mat = [[10-a-b | b<-[0..9-a]] | a<-[0..9]]
-
-dp = iterate digitsum mat !! 17
-
-digitsum x = [[sum [x!!b!!c | c<-[0..9-a-b]] | b<-[0..9-a]] | a<-[0..9]]
+euler_164 :: Integer
+euler_164 = sum [dp !! a !! b | a <- [1..9], b <- [0..9-a]] where
+    mat = [[10-a-b | b<-[0..9-a]] | a<-[0..9]]
+    dp = iterate digitsum mat !! 17 where
+        digitsum x = [[sum [x!!b!!c | c<-[0..9-a-b]] | b<-[0..9-a]] | a<-[0..9]]
 ```
 

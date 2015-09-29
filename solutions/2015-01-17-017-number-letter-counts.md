@@ -1,6 +1,6 @@
 ---
 title: Problem 17. Number letter counts
-author: DHDave
+author: He Tao
 date: 2015-01-17
 layout: post
 ---
@@ -51,25 +51,30 @@ If all the numbers from 1 to 1000 (one thousand) inclusive were written out in w
 #! /usr/bin/env python
 # -*- coding: utf-8
 
-a = [0,3,3,5,4,4,3,5,5,4]
-b = [0,0,6,6,5,5,5,7,6,6]
-c = [3,6,6,8,8,7,7,9,8,8]
+def euler_17():
 
-ans = 0
+    a = [0,3,3,5,4,4,3,5,5,4]
+    b = [0,0,6,6,5,5,5,7,6,6]
+    c = [3,6,6,8,8,7,7,9,8,8]
 
-for i in range(1, 1000):
-    if i//10%10 == 1: # 1 at units digit
-        ans += c[i%10]
-    else:
-        ans += a[i%10]
-        ans += b[i//10%10]
-    if i // 100 > 0: # number greater than 99 (three digits)
-        if i % 100 == 0:
-            ans += (a[i//100]+7)
+    ans = 0
+
+    for i in range(1, 1000):
+        if i//10%10 == 1: # 1 at units digit
+            ans += c[i%10]
         else:
-            ans += (a[i//100]+10)
-ans += 11 # 1000
-print(ans)
+            ans += a[i%10]
+            ans += b[i//10%10]
+        if i // 100 > 0: # number greater than 99 (three digits)
+            if i % 100 == 0:
+                ans += (a[i//100]+7)
+            else:
+                ans += (a[i//100]+10)
+    ans += 11 # 1000
+    return ans
+
+if __name__ == '__main__':
+    print(euler_17())
 
 # vim: set sw=4, ts=4, fileencoding=utf-8
 ```

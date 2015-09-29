@@ -1,6 +1,6 @@
 ---
 title: Problem 42. Coded triangle numbers
-author: DHDave
+author: He Tao
 date: 2015-02-12
 layout: post
 ---
@@ -57,7 +57,7 @@ $$ 19 + 11 + 25 = 55 = t10 $$
 
 import math
 
-if __name__ == '__main__':
+def euler_42():
     s, cnt = None, 0
     with open("p042_words.txt", "r") as fp:
         s = fp.read().split(',')
@@ -68,7 +68,10 @@ if __name__ == '__main__':
         k = int(math.sqrt(v*2))
         if (k*(k+1))//2 == v:
             cnt += 1
-    print(cnt)
+    return cnt
+
+if __name__ == '__main__':
+    print(euler_42())
 
 # vim: set sw=4, ts=4
 ```

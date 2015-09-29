@@ -1,6 +1,6 @@
 ---
 title: Problem 30. Digit fifth powers
-author: DHDave
+author: He Tao
 date: 2015-01-30
 layout: post
 ---
@@ -49,12 +49,15 @@ $$ 9474 = 9^4 + 4^4 + 7^4 + 4^4 $$
 #! /usr/bin/env python
 # -*- coding: utf-8
 
-if __name__ == '__main__':
+def euler_30():
     ans = 0
     for i in range(2, 1000000):
         if i == sum([int(j)**5 for j in str(i)]):
             ans += i
-    print(ans)
+    return ans
+
+if __name__ == '__main__':
+    print(euler_30())
 
 # vim: set sw=4, ts=4
 ```

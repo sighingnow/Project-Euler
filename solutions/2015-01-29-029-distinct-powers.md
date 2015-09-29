@@ -1,6 +1,6 @@
 ---
 title: Problem 29. Distinct powers
-author: DHDave
+author: He Tao
 date: 2015-01-29
 layout: post
 ---
@@ -49,13 +49,16 @@ ab 在 2 ≤ a ≤ 100，2 ≤ b ≤ 100 下生成的序列中有多少个不同
 #! /usr/bin/env python
 # -*- coding: utf-8
 
-if __name__ == '__main__':
+def euler_29():
     M = {}
     for a in range(2, 101):
         for b in range(2, 101):
             ans = a ** b
             M[ans] = True
-    print(M.__len__())
+    return M.__len__()
+
+if __name__ == '__main__':
+    print(euler_29())
 
 # vim: set sw=4, ts=4
 ```

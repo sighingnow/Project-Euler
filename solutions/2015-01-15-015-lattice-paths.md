@@ -1,6 +1,6 @@
 ---
 title: Problem 15. Lattice-paths
-author: DHDave
+author: He Tao
 date: 2015-01-15
 layout: post
 ---
@@ -36,13 +36,18 @@ How many such routes are there through a 20×20 grid?
 #! /usr/bin/env python
 # -*- coding: utf-8
 
-def fact(n):
-    ans = 1
-    for i in range(1, n+1):
-        ans *= i
-    return ans
+def euler_15():
 
-print(fact(40)//fact(20)//fact(20))
+    def fact(n):
+        ans = 1
+        for i in range(1, n+1):
+            ans *= i
+        return ans
+
+    return fact(40)//fact(20)//fact(20)
+
+if __name__ == '__main__':
+    print(euler_15())
 
 # vim: set sw=4, ts=4, fileencoding=utf-8
 ```

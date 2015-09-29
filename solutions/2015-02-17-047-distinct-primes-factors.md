@@ -1,6 +1,6 @@
 ---
 title: Problem 47. Distinct primes factors
-author: DHDave
+author: He Tao
 date: 2015-02-17
 layout: post
 ---
@@ -52,33 +52,37 @@ Find the first four consecutive integers to have four distinct prime factors. Wh
 
 from math import sqrt
 
-def prime(n):
-    for x in range(2, int(sqrt(n))+1):
-        if n % x == 0:
-            return False
-    return True
+def euler_47():
 
-def check(x):
-    if prime(x):
-        return 1
-    k, m = 2, 0
-    while x > 1:
-        if x % k == 0:
-            m += 1
-            if m > 4:
-                return m
-            while x % k == 0:
-                x //= k
-        k += 1
-    return m
+    def prime(n):
+        for x in range(2, int(sqrt(n))+1):
+            if n % x == 0:
+                return False
+        return True
 
-if __name__ == '__main__':
+    def check(x):
+        if prime(x):
+            return 1
+        k, m = 2, 0
+        while x > 1:
+            if x % k == 0:
+                m += 1
+                if m > 4:
+                    return m
+                while x % k == 0:
+                    x //= k
+            k += 1
+        return m
+
     M = [0 for i in range(0, 1000000)]
     for x in range(210, 1000000):
         M[x] = check(x)
         if M[x]==4 and M[x-1]==4 and M[x-2]==4 and M[x-3]==4:
             print(x-3)
             break
+
+if __name__ == '__main__':
+    print(euler_47())
 
 # vim: set sw=4, ts=4
 ```

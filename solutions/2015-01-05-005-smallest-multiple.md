@@ -1,6 +1,6 @@
 ---
 title: Problem 5. Smallest multiple
-author: DHDave
+author: He Tao
 date: 2015-01-05
 layout: post
 ---
@@ -29,19 +29,23 @@ What is the smallest positive number that is evenly divisible by all of the numb
 #! /usr/bin/env python
 # -*- coding: utf-8
 
-def gcd(a, b):
-    if(b == 0):
-        return a
-    return gcd(b, a % b)
+def euler_5():
 
-def lcm(a, b):
-    return a * b // gcd(a, b)
-                
-if __name__ == '__main__':
+    def gcd(a, b):
+        if(b == 0):
+            return a
+        return gcd(b, a % b)
+
+    def lcm(a, b):
+        return a * b // gcd(a, b)
+
     ans = 1
     for i in range(2, 21):
         ans = lcm(ans, i)
-    print(ans)
+    return ans
+                
+if __name__ == '__main__':
+    print(euler_5())
 
 # vim: set sw=4, ts=4
 ```

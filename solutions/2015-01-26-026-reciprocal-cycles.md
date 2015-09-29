@@ -1,6 +1,6 @@
 ---
 title: Problem 26. Reciprocal cycles
-author: DHDave
+author: He Tao
 date: 2015-01-26
 layout: post
 ---
@@ -60,28 +60,32 @@ Find the value of d < 1000 for which 1/d contains the longest recurring cycle in
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-def div(n):
-    cnt, start = 0, 1
-    record = [-1 for i in range(0, 1001)]
-    while True:
-        while start < n:
-            start *= 10
-            cnt += 1
-        start %= n
-        if start == 0:
-            return -1
-        if record[start] != -1:
-            break
-        else:
-            record[start] = cnt
-    return cnt - record[start]
+def euler_26():
 
-if __name__ == '__main__':
+    def div(n):
+        cnt, start = 0, 1
+        record = [-1 for i in range(0, 1001)]
+        while True:
+            while start < n:
+                start *= 10
+                cnt += 1
+            start %= n
+            if start == 0:
+                return -1
+            if record[start] != -1:
+                break
+            else:
+                record[start] = cnt
+        return cnt - record[start]
+
     index, cnt = -1, -1
     for i in range(1, 1001):
         if cnt < div(i):
             index, cnt = i, div(i)
-    print(index, cnt)
+    return (index, cnt)
+
+if __name__ == '__main__':
+    print(euler_26())
 
 # vim: set sw=4, ts=4
 ```

@@ -1,6 +1,6 @@
 ---
 title: Problem 25. 1000-digit Fibonacci number
-author: DHDave
+author: He Tao
 date: 2015-01-25
 layout: post
 ---
@@ -73,12 +73,15 @@ $$ Fn = Fn−1 + Fn−2, F1 = 1, F2 = 1. $$
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-if __name__ == '__main__':
+def euler_25():
     a, b, cnt = 1, 1, 1
     while str(a).__len__() < 1000:
         a, b = b, a+b
         cnt += 1
-    print(cnt)
+    return cnt
+
+if __name__ == '__main__':
+    print(euler_25())
 
 # vim: set sw=4, ts=4
 ```

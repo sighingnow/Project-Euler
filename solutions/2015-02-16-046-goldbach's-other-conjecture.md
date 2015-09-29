@@ -1,6 +1,6 @@
 ---
 title: Problem 46. Goldbach's other conjecture
-author: DHDave
+author: He Tao
 date: 2015-02-16
 layout: post
 ---
@@ -51,27 +51,31 @@ Christian Goldbach 提出每个奇合数都可以写作一个质数与一个平�
 
 from math import sqrt
 
-def prime(n):
-    for x in range(2, int(sqrt(n))+1):
-        if n % x == 0:
-            return False
-    return True
+def euler_46():
 
-def judge(n):
-    for x in range(3, n, 2):
-        if not prime(x):
-            continue
-        t = int(sqrt((n-x)//2))
-        if 2*t*t+x == n:
-            return False
-    else:
+    def prime(n):
+        for x in range(2, int(sqrt(n))+1):
+            if n % x == 0:
+                return False
         return True
 
-if __name__ == '__main__':
+    def judge(n):
+        for x in range(3, n, 2):
+            if not prime(x):
+                continue
+            t = int(sqrt((n-x)//2))
+            if 2*t*t+x == n:
+                return False
+        else:
+            return True
+
     for x in range(35, 1000000, 2):
         if not prime(x) and judge(x):
             print(x)
             break
+
+if __name__ == '__main__':
+    print(euler_46())
 
 # vim: set sw=4, ts=4
 ```

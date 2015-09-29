@@ -1,6 +1,6 @@
 ---
 title: Problem 3. Largest prime factor
-author: DHDave
+author: He Tao
 date: 2015-01-03
 layout: post
 ---
@@ -29,14 +29,36 @@ What is the largest prime factor of the number 600851475143 ?
 #! /usr/bin/env python
 # -*- coding: utf-8
 
-if __name__ == '__main__':
+def euler_3():
     num, ans = 600851475143, 2
     while ans < num:
         while num % ans == 0:
             num //= ans
         ans += 1
-    print(num)
+    return num
+
+if __name__ == '__main__':
+    print(euler_3())
 
 # vim: set sw=4, ts=4
 ```
 
++ Haskell
+
+```haskell
+import Data.List
+
+main :: IO ()
+main = print $ euler_3
+
+euler_3 :: Int
+euler_3 = last $ primefactors 600851475143
+
+primefactors :: Int -> [Int]
+primefactors n = factor n primes where
+    factor n (p:ps)
+        | p * p > n         = [n]
+        | n `mod` p == 0    = p : factor (n `div` p) (p:ps)
+        | otherwise         = factor n ps
+    primes = 2 : filter (null . tail . primefactors) [3, 5 ..]
+```

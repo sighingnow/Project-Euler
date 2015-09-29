@@ -1,6 +1,6 @@
 ---
 title: Problem 27. Quadratic primes
-author: DHDave
+author: He Tao
 date: 2015-01-27
 layout: post
 ---
@@ -57,27 +57,31 @@ $$ n^2 + n + 41 $$
 
 import math
 
-def isPrime(number):
-    if number < 2:
-        return False
-    for i in range(2, int(math.sqrt(number)+1)):
-        if number % i == 0:
-            return False
-    return True
+def euler+27():
 
-if __name__ == '__main__':
+    def isprime(number):
+        if number < 2:
+            return False
+        for i in range(2, int(math.sqrt(number)+1)):
+            if number % i == 0:
+                return False
+        return True
+
     ansa, ansb, cnt = 0, 0, 0
     for b in range(2, 1000):
-        if not isPrime(b):
+        if not isprime(b):
             continue
         for a in range(-b, 1000):
             n = 0
-            while isPrime(n*(n+a)+b):
+            while isprime(n*(n+a)+b):
                 n += 1
             if n > cnt:
                 cnt = n
                 ansa, ansb = a, b
-    print(cnt, ansa, ansb, ansa*ansb)
+    return (cnt, ansa, ansb, ansa*ansb)
+
+if __name__ == '__main__':
+    print(euler_27())
 
 # vim: set sw=4, ts=4
 ```

@@ -1,6 +1,6 @@
 ---
 title: Problem 6. Sum square difference
-author: DHDave
+author: He Tao
 date: 2015-01-06
 layout: post
 ---
@@ -44,5 +44,13 @@ $$</center>
 + Python
 
 ```python
-ans = sum([i for i in range(1, 101)])**2 - sum([i**2 for i in range(1, 101)])
+#! /usr/bin/env python
+# -*- coding: utf-8
+
+def euler_6():
+    return sum([i for i in range(1, 101)])**2 - sum([i**2 for i in range(1, 101)])
+
+if __name__ == '__main__':
+    print(euler_6())
+
 ```

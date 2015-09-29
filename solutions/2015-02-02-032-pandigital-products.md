@@ -1,6 +1,6 @@
 ---
 title: Problem 32. Pandigital products
-author: DHDave
+author: He Tao
 date: 2015-02-02
 layout: post
 ---
@@ -39,19 +39,20 @@ Find the sum of all products whose multiplicand/multiplier/product identity can 
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-def calc(a, b):
-    cnt = [0 for i in range(0, 10)]
-    for e in [a, b, a*b]:
-        for t in str(e):
-            cnt[int(t)] += 1
-    if cnt[0] != 0:
-        return False
-    for i in range(1, 10):
-        if cnt[i] != 1:
-            return False
-    return True
+def euler_32():
 
-if __name__ == '__main__':
+    def calc(a, b):
+        cnt = [0 for i in range(0, 10)]
+        for e in [a, b, a*b]:
+            for t in str(e):
+                cnt[int(t)] += 1
+        if cnt[0] != 0:
+            return False
+        for i in range(1, 10):
+            if cnt[i] != 1:
+                return False
+        return True
+
     ans = {}
     for a in range(1, 10000):
         for b in range(a+1, 10000):
@@ -59,7 +60,10 @@ if __name__ == '__main__':
                 break
             if calc(a, b):
                 ans[a*b] = 1
-    print(sum(ans.keys()))
+    return sum(ans.keys())
+
+if __name__ == '__main__':
+    print(euler_32())
 
 # vim: set sw=4, ts=4
 ```

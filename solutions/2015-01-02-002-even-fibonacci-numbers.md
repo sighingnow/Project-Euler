@@ -1,6 +1,6 @@
 ---
 title: Problem 2. Even Fibonacci numbers
-author: DHDave
+author: He Tao
 date: 2015-01-02
 layout: post
 ---
@@ -33,14 +33,16 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 #! /usr/bin/env python
 # -*- coding: utf-8
 
-if __name__ == '__main__':
+def euler_2():
     ans = 0
     a, b = 1, 2
     while a <= 4000000:
         if a % 2 == 0:
             ans += a
         a, b = b, a + b
-    print(ans)
+    return ans
 
+if __name__ == '__main__':
+    print(euler_2())
 # vim: set sw=4, ts=4
 ```

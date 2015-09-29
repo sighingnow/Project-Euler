@@ -1,6 +1,6 @@
 ---
 title: Problem 41. Pandigital prime
-author: DHDave
+author: He Tao
 date: 2015-02-11
 layout: post
 ---
@@ -52,14 +52,13 @@ What is the largest _n-digit_ pandigital prime that exists?
 import itertools
 import math
 
-def isprime(n):
-    for x in range(2, int(math.sqrt(n))+1):
-        if n % x == 0:
-            return False
-    return True
+def euler_41():
+    def isprime(n):
+        for x in range(2, int(math.sqrt(n))+1):
+            if n % x == 0:
+                return False
+        return True
 
-
-if __name__ == '__main__':
     for x in itertools.permutations([7,6,5,4,3,2,1]):
         t = 0
         for i in x:
@@ -67,6 +66,9 @@ if __name__ == '__main__':
         if isprime(t):
             print(x)
             break
+
+if __name__ == '__main__':
+    print(euler_41())
 
 # vim: set sw=4, ts=4
 ```

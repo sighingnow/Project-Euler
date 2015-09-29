@@ -1,6 +1,6 @@
 ---
 title: Problem 20. Factorial digit sum
-author: DHDave
+author: He Tao
 date: 2015-01-20
 layout: post
 ---
@@ -37,11 +37,14 @@ $$ n! = n \times (n − 1) \times ... \times 3 \times 2  1 $$
 #! /usr/bin/env python
 # -*- coding: utf-8
 
-if __name__ == '__main__':
+def euler_20():
     ans = 1
     for i in range(1, 101):
         ans *= i
-    print(sum([int(i) for i in str(ans)]))
+    return sum([int(i) for i in str(ans)])
+
+if __name__ == '__main__':
+    print(euler_20())
 
 # vim: set sw=4, ts=4
 ```

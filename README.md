@@ -28,7 +28,7 @@ All problems can be found at [Project Euler](https://projecteuler.net/).
 |:----:|:------------------:|--------------------|:---------------------------------------:|
 | 001  | :white_check_mark: | 233168             | Python                                  |
 | 002  | :white_check_mark: | 4613732            | Python                                  |
-| 003  | :white_check_mark: | 6857               | Python                                  |
+| 003  | :white_check_mark: | 6857               | Python, Haskell                         |
 | 004  | :white_check_mark: | 906609             | Python                                  |
 | 005  | :white_check_mark: | 232792560          | Python                                  |
 | 006  | :white_check_mark: | 25164150           | Python                                  |
@@ -37,7 +37,7 @@ All problems can be found at [Project Euler](https://projecteuler.net/).
 | 009  | :white_check_mark: | 31875000           | Python                                  |
 | 010  | :white_check_mark: | 142913828922       | Python                                  |
 | 011  | :white_check_mark: | 70600674           | Python                                  |
-| 012  | :white_check_mark: | 76576500           | Python                                  |
+| 012  | :white_check_mark: | 76576500           | Python, Haskell                         |
 | 013  | :white_check_mark: | 5537376230         | Python                                  |
 | 014  | :white_check_mark: | 837799             | Python                                  |
 | 015  | :white_check_mark: | 137846528820       | Python                                  |

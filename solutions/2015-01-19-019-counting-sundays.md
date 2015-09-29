@@ -1,6 +1,6 @@
 ---
 title: Problem 19. Counting Sundays
-author: DHDave
+author: He Tao
 date: 2015-01-19
 layout: post
 ---
@@ -60,23 +60,27 @@ $$ w = (y+\lfloor{y/4}\rfloor+\lfloor{c/4}\rfloor-2c+\lfloor{26(m+1)/10}\rfloor+
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-def getWeek(year, mouth, day):
-    ''' Zeller Method.
-    '''
-    if mouth < 3:
-        year -= 1
-        mouth += 12
-    y, c = int(str(year)[2:4]), int(str(year)[0:2])
-    week = (y + y//4 + c//4 - 2*c + 26*(mouth+1)//10 + day - 1) % 7
-    return week
+def euler_19():
 
-if __name__ == '__main__':
+    def getWeek(year, mouth, day):
+        ''' Zeller Method.
+        '''
+        if mouth < 3:
+            year -= 1
+            mouth += 12
+        y, c = int(str(year)[2:4]), int(str(year)[0:2])
+        week = (y + y//4 + c//4 - 2*c + 26*(mouth+1)//10 + day - 1) % 7
+        return week
+
     cnt = 0
     for year in range(1901, 2000):
         for mouth in range(3, 15):
             if getWeek(year, mouth, 1) == 1:
                 cnt += 1
-    print(cnt)
+    return cnt
+
+if __name__ == '__main__':
+    print(euler_19())
 
 # vim: set sw=4, ts=4
 ```

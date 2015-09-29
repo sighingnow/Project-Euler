@@ -1,6 +1,6 @@
 ---
 title: Problem 33. Digit cancelling fractions
-author: DHDave
+author: He Tao
 date: 2015-02-03
 layout: post
 ---

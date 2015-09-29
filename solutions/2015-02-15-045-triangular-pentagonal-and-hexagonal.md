@@ -1,6 +1,6 @@
 ---
 title: Problem 45. Triangular, pentagonal, and hexagonal
-author: DHDave
+author: He Tao
 date: 2015-02-15
 layout: post
 ---
@@ -46,11 +46,14 @@ Find the next triangle number that is also pentagonal and hexagonal.
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-if __name__ == '__main__':
+def euler_45():
     T = set([n*(n+1)//2 for n in range(0, 1000000)])
     P = set([n*(3*n-1)//2 for n in range(0, 1000000)])
     H = set([n*(2*n-1) for n in range(0, 100000)])
-    print(T & P & H)
+    return T & P & H
+
+if __name__ == '__main__':
+    print(euler_45())
 
 # vim: set sw=4, ts=4
 ```

@@ -1,6 +1,6 @@
 ---
 title: Problem 37. Truncatable primes
-author: DHDave
+author: He Tao
 date: 2015-02-07
 layout: post
 ---
@@ -35,25 +35,26 @@ NOTE: 2, 3, 5, and 7 are not considered to be truncatable primes.
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-isprime = [True for i in range(0, 1000000)]
+def euler_37():
 
-def precess():
-    isprime[0:2] = [False, False]
-    for i in range(2, 1000000):
-        if isprime[i]:
-            n = i + i
-            while n < 1000000:
-                isprime[n] = False
-                n += i
+    isprime = [True for i in range(0, 1000000)]
 
-def trunc(n):
-    m, n = len(str(n)), str(n)
-    for i in range(0, m):
-        if not isprime[int(n[i:m])] or not isprime[int(n[0:i+1])]:
-            return False
-    return True
+    def precess():
+        isprime[0:2] = [False, False]
+        for i in range(2, 1000000):
+            if isprime[i]:
+                n = i + i
+                while n < 1000000:
+                    isprime[n] = False
+                    n += i
 
-if __name__ == '__main__':
+    def trunc(n):
+        m, n = len(str(n)), str(n)
+        for i in range(0, m):
+            if not isprime[int(n[i:m])] or not isprime[int(n[0:i+1])]:
+                return False
+        return True
+
     cnt, ans, start = 0, 0, 11
     precess()
     while cnt < 11:
@@ -61,7 +62,10 @@ if __name__ == '__main__':
             cnt += 1
             ans += start
         start += 2 # ignore all evens.
-    print(ans)
+    return ans
+
+if __name__ == '__main__':
+    print(euler_37())
 
 # vim: set sw=4, ts=4
 ```

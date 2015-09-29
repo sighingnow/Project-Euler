@@ -1,6 +1,6 @@
 ---
 title: Problem 44. Pentagon numbers
-author: DHDave
+author: He Tao
 date: 2015-02-14
 layout: post
 ---
@@ -39,10 +39,11 @@ $$ 1, 5, 12, 22, 35, 51, 70, 92, 117, 145, ... $$
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-number = [n*(3*n-1)//2 for n in range(0, 1000000)]
-m = {}
+def euler_44():
 
-if __name__ == '__main__':
+    number = [n*(3*n-1)//2 for n in range(0, 1000000)]
+    m = {}
+
     u = 1
     while u < 10000:
         v = u+1
@@ -51,6 +52,9 @@ if __name__ == '__main__':
                 print(number[u], number[v], number[v]-number[u])
             v += 1
         u += 1
+
+if __name__ == '__main__':
+    print(euler_44())
 
 # vim: set sw=4, ts=4
 ```

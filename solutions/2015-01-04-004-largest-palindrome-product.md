@@ -1,6 +1,6 @@
 ---
 title: Problem 4. Largest palindrome product
-author: DHDave
+author: He Tao
 date: 2015-01-04
 layout: post
 ---
@@ -29,7 +29,7 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 #! /usr/bin/env python
 # -*- coding: utf-8
 
-def main():
+def euler_4():
     ans = -1
     for i in range(999, 99, -1):
         for j in range(999, 99, -1):
@@ -41,8 +41,7 @@ def main():
     return ans
                 
 if __name__ == '__main__':
-    ans = main()
-    print(ans)
+    print(euler_4())
 
 # vim: set sw=4, ts=4
 ```

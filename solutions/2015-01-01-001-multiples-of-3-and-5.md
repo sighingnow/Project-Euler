@@ -1,6 +1,6 @@
 ---
 title: Problem 1. Multiples of 3 and 5
-author: DHDave
+author: He Tao
 date: 2015-01-01
 layout: post
 ---
@@ -26,5 +26,12 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 + Python
 
 ```python
-ans = sum([i if(i%3==0 or i%5==0) else 0 for i in range(0, 1000)])
+#! /usr/bin/env python
+# -*- coding: utf-8
+
+def euler_1():
+    return sum([i if(i%3==0 or i%5==0) else 0 for i in range(0, 1000)])
+
+if __name__ == '__main__':
+    print(euler_1())
 ```

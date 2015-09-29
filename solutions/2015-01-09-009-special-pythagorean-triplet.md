@@ -1,6 +1,6 @@
 ---
 title: Problem 9. Special Pythagorean triplet
-author: DHDave
+author: He Tao
 date: 2015-01-09
 layout: post
 ---
@@ -46,7 +46,7 @@ Find the product abc.
 #! /usr/bin/env python
 # -*- coding: utf-8
 
-def solve():
+def euler_9():
     for a in range(3, 999):
         for b in range(2, a):
             for c in range(1, b):
@@ -54,8 +54,7 @@ def solve():
                     return a*b*c
             
 if __name__ == '__main__':
-    ans = solve()
-    print(ans)
+    print(euler_9())
 
 # vim: set sw=4, ts=4
 ```

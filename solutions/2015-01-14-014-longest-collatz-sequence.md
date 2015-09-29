@@ -1,6 +1,6 @@
 ---
 title: Problem 14. Longest Collatz sequence
-author: DHDave
+author: He Tao
 date: 2015-01-14
 layout: post
 ---
@@ -45,35 +45,40 @@ $$ 13 → 40 → 20 → 10 → 5 → 16 → 8 → 4 → 2 → 1 $$
 #! /usr/bin/env python
 # -*- coding: utf-8
 
-num = [0 for i in range(0, 1000001)]
+def euler_14():
 
-def collatz(n):
-    if n == 1:
-        return 1
-    ans = 0
-    if n > 1000000:
-        if n % 2 == 0:
-            ans = collatz(n // 2) + 1
-        else:
-            ans = collatz(3 * n + 1) + 1
-    else:
-        if num[n] == 0:
+    num = [0 for i in range(0, 1000001)]
+
+    def collatz(n):
+        if n == 1:
+            return 1
+        ans = 0
+        if n > 1000000:
             if n % 2 == 0:
-                num[n] = collatz(n // 2) + 1
+                ans = collatz(n // 2) + 1
             else:
-                num[n] = collatz(3 * n + 1) + 1
-        ans = num[n]
-    return ans
+                ans = collatz(3 * n + 1) + 1
+        else:
+            if num[n] == 0:
+                if n % 2 == 0:
+                    num[n] = collatz(n // 2) + 1
+                else:
+                    num[n] = collatz(3 * n + 1) + 1
+            ans = num[n]
+        return ans
 
-max_index = 0
+    max_index = 0
 
-for i in range(1, 1000001):
-    if num[i] == 0:
-        num[i] = collatz(i)
-        if num[i] > num[max_index]:
-            max_index = i
+    for i in range(1, 1000001):
+        if num[i] == 0:
+            num[i] = collatz(i)
+            if num[i] > num[max_index]:
+                max_index = i
 
-print(max_index)
+    return max_index
+
+if __name__ == '__main__':
+    print(euler_14())
 
 # vim: set sw=4, ts=4, fileencoding=utf-8
 ```

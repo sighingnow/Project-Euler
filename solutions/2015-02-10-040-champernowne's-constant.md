@@ -1,6 +1,6 @@
 ---
 title: Problem 40. Champernowne's constant
-author: DHDave
+author: He Tao
 date: 2015-02-10
 layout: post
 ---

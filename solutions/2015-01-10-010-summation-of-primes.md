@@ -1,6 +1,6 @@
 ---
 title: Problem 10. Summation of primes
-author: DHDave
+author: He Tao
 date: 2015-01-10
 layout: post
 ---
@@ -29,9 +29,8 @@ Find the sum of all the primes below two million.
 #! /usr/bin/env python
 # -*- coding: utf-8
 
-prime = [True]*2000000
-
-def solve():
+def euler_10():
+    prime = [True]*2000000
     prime[1:4] = [False, True, True]
     for i in range(1, 2000000):
         if prime[i] == True:
@@ -47,11 +46,9 @@ def solve():
         if prime[i] == True:
             ans += i
     return ans
-    
 
 if __name__ == '__main__':
-    ans = solve()
-    print(ans)
+    print(euler_10())
 
 # vim: set sw=4, ts=4
 ```

@@ -1,6 +1,6 @@
 ---
 title: Problem 24. Lexicographic permutations
-author: DHDave
+author: He Tao
 date: 2015-01-24
 layout: post
 ---
@@ -39,29 +39,34 @@ $$ 012\ 021\ 102\ 120\ 201\ 210 $$
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-buf = [-1 for i in range(0, 11)]
-flag = [False for i in range(0, 11)]
-num = [-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+def euler_24():
 
-cnt = 0
+    buf = [-1 for i in range(0, 11)]
+    flag = [False for i in range(0, 11)]
+    num = [-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-def dfs(n):
-    global cnt
-    if(n == 11):
-        cnt += 1
-        if(cnt == 1000000):
-            print(buf)
-            return
-    else:
-        for i in range(1, 11):
-            if not flag[i]:
-                buf[n] = num[i]
-                flag[i] = True
-                dfs(n+1)
-                flag[i] = False
+    cnt = {'val': 0}
+
+    def dfs(n):
+        if(n == 11):
+            cnt['val'] = cnt['val'] + 1
+            if(cnt['val'] == 1000000):
+                raise Exception(buf)
+        else:
+            for i in range(1, 11):
+                if not flag[i]:
+                    buf[n] = num[i]
+                    flag[i] = True
+                    dfs(n+1)
+                    flag[i] = False
+    # use exception to do non-local exit.
+    try:
+        dfs(1)
+    except Exception as e:
+        return e.args[0]
 
 if __name__ == '__main__':
-    dfs(1)
+    print(euler_24())
 
 # vim: set sw=4, ts=4
 ```

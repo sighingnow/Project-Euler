@@ -1,6 +1,6 @@
 ---
 title: Problem 34. Digit factorials
-author: DHDave
+author: He Tao
 date: 2015-02-04
 layout: post
 ---
@@ -37,20 +37,24 @@ Note: as 1! = 1 and 2! = 2 are not sums they are not included.
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-def fact(n):
-    ans = 1
-    while n > 1:
-        ans *= n
-        n -= 1
-    return ans
+def euler_34():
 
-if __name__ == '__main__':
+    def fact(n):
+        ans = 1
+        while n > 1:
+            ans *= n
+            n -= 1
+        return ans
+
     ans = 0
     for i in range(3, 2540160):
         if i == sum([fact(int(j)) for j in str(i)]):
             print(i)
             ans += i
-    print(ans)
+    return ans
+
+if __name__ == '__main__':
+    print(euler_34())
 
 # vim: set sw=4, ts=4
 ```

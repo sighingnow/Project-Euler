@@ -1,6 +1,6 @@
 ---
 title: Problem 39. Integer right triangles
-author: DHDave
+author: He Tao
 date: 2015-02-09
 layout: post
 ---
@@ -35,7 +35,7 @@ For which value of p ≤ 1000, is the number of solutions maximised?
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-if __name__ == '__main__':
+def euler_39():
     ans, maxcnt = 0, 0
     for s in range(3, 1000):
         cnt = 0
@@ -46,7 +46,10 @@ if __name__ == '__main__':
         if cnt > maxcnt:
             maxcnt = cnt
             ans = s
-    print(ans, maxcnt)
+    return ans, maxcnt
+
+if __name__ == '__main__':
+    print(euler_39())
 
 # vim: set sw=4, ts=4
 ```

@@ -1,6 +1,6 @@
 ---
 title: Problem 43. Sub-string divisibility
-author: DHDave
+author: He Tao
 date: 2015-02-13
 layout: post
 ---
@@ -57,26 +57,29 @@ Find the sum of all 0 to 9 pandigital numbers with this property.
 
 from itertools import permutations
 
-def to_int(t):
-    ans = 0
-    for e in t:
-        ans = ans * 10 + int(e)
-    return ans
+def euler_43():
+    def to_int(t):
+        ans = 0
+        for e in t:
+            ans = ans * 10 + int(e)
+        return ans
 
-def judge(t):
-    prime = [0, 2, 3, 5, 7, 11, 13, 17]
-    for i in range(1, 8):
-        if to_int(t[i:i+3]) % prime[i] != 0:
-            return False
-    return True
-    
-if __name__ == '__main__':
+    def judge(t):
+        prime = [0, 2, 3, 5, 7, 11, 13, 17]
+        for i in range(1, 8):
+            if to_int(t[i:i+3]) % prime[i] != 0:
+                return False
+        return True
+
     ans = 0
     for item in permutations("0123456789"):
         if item[0] != '0' and judge(item):
             print(item)
             ans += to_int(item)
-    print(ans)
+    return ans
+
+if __name__ == '__main__':
+    print(euler_43())
     
 # vim: set sw=4, ts=4
 ```

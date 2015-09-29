@@ -1,6 +1,6 @@
 ---
 title: Problem 38. Pandigital multiples
-author: DHDave
+author: He Tao
 date: 2015-02-08
 layout: post
 ---
@@ -49,13 +49,16 @@ What is the largest 1 to 9 pandigital 9-digit number that can be formed as the c
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-if __name__ == '__main__':
+def euler_38():
     ans = 0
     for x in range(3334, 10000):
         s = str(str(x)+str(x*2))
         if '0' not in s and len(s)==9 and len(set(s)) == 9:
             ans = int(s)
-    print(ans)
+    return ans
+
+if __name__ == '__main__':
+    print(euler_38())
 
 # vim: set sw=4, ts=4
 ```

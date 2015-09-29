@@ -1,6 +1,6 @@
 ---
 title: Problem 12. Highly divisible triangular number
-author: DHDave
+author: He Tao
 date: 2015-01-12
 layout: post
 ---
@@ -62,29 +62,55 @@ $$ 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, ... $$
 #! /usr/bin/env python
 # -*- coding: utf-8
 
-start = 1
-n = 1
+def euler_12():
+    start, n = 1, 1
 
-while True:
-    cnt = {}
-    top = 2
-    tmp = start
-    while tmp > 1:
-        while tmp % top == 0:
-            tmp //= top
-            if top not in cnt:
-                cnt[top] = 1
-            else:
-                cnt[top] += 1
-        top += 1
-    ans = 1
-    for k, v in cnt.items():
-        ans *= (v+1)
-    if ans > 500:
-        break
-    n += 1
-    start += n
-print(start)
+    while True:
+        cnt = {}
+        top = 2
+        tmp = start
+        while tmp > 1:
+            while tmp % top == 0:
+                tmp //= top
+                if top not in cnt:
+                    cnt[top] = 1
+                else:
+                    cnt[top] += 1
+            top += 1
+        ans = 1
+        for k, v in cnt.items():
+            ans *= (v+1)
+        if ans > 500:
+            break
+        n += 1
+        start += n
+
+    return start
+
+if __main__ == '__main__':
+    print(euler_12())
 
 # vim: set sw=4, ts=4, fileencoding=utf-8
+```
+
++ Haskell
+
+```haskell
+import Data.List
+
+main :: IO ()
+main = print $ euler_12
+
+euler_12 :: Int
+euler_12 = head $ filter ((> 500) . divisor) trianglenumbers where
+    divisor n = product $ map ((+1) . length) (group (primefactors n))
+    trianglenumbers = scanl1 (+) [1..]
+
+primefactors :: Int -> [Int]
+primefactors n = factor n primes where
+    factor n (p:ps)
+        | p * p > n         = [n]
+        | n `mod` p == 0    = p : factor (n `div` p) (p:ps)
+        | otherwise         = factor n ps
+    primes = 2 : filter (null . tail . primefactors) [3, 5 ..]
 ```

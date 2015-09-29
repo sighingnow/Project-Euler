@@ -1,6 +1,6 @@
 ---
 title: Problem 501. Eight Divisors
-author: DHDave
+author: He Tao
 date: 2015-02-20
 layout: post
 ---

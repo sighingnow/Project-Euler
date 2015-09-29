@@ -1,6 +1,6 @@
 ---
 title: Problem 49. Prime permutations
-author: DHDave
+author: He Tao
 date: 2015-02-19
 layout: post
 ---
@@ -40,13 +40,14 @@ What 12-digit number do you form by concatenating the three terms in this sequen
 from math import sqrt
 from itertools import permutations
 
-def prime(n):
-    for x in range(2, int(sqrt(n))+1):
-        if n % x == 0:
-            return False
-    return True
+def euler_49():
 
-if __name__ == '__main__':
+    def prime(n):
+        for x in range(2, int(sqrt(n))+1):
+            if n % x == 0:
+                return False
+        return True
+
     primes = []
     for i in range(1000, 10000):
         if prime(i):
@@ -56,6 +57,9 @@ if __name__ == '__main__':
             if set(str(k))==set(str(k+diff))==set(str(k+2*diff)) \
                     and k+diff in primes and k+2*diff in primes:
                 print(k, k+diff, k+2*diff)
+
+if __name__ == '__main__':
+    print(euler_49())
 
 # vim: set sw=4, ts=4
 ```

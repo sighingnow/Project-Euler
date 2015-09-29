@@ -1,6 +1,6 @@
 ---
 title: Problem 16. Power digit sum
-author: DHDave
+author: He Tao
 date: 2015-01-16
 layout: post
 ---
@@ -26,5 +26,13 @@ What is the sum of the digits of the number 2^1000?
 + Python
 
 ```python
-ans = sum([int(i) for i in str(2**1000)])
+#! /usr/bin/env python
+# -*- coding: utf-8
+
+def euler16():
+    return sum([int(i) for i in str(2**1000)])
+
+if __name__ == '__main__':
+    print(euler16())
+
 ```

@@ -1,6 +1,6 @@
 ---
 title: Problem 21. Amicable numbers
-author: DHDave
+author: He Tao
 date: 2015-01-21
 layout: post
 ---
@@ -38,15 +38,16 @@ d(n)定义为n 的所有真因子（小于 n 且能整除 n 的整数）之和�
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-cnt = [0 for i in range(0, 10001)]
+def euler_21():
 
-def getCnt(number):
-    for i in range(1, number):
-        if number % i == 0:
-            cnt[number] += i
-    return cnt[number]
+    cnt = [0 for i in range(0, 10001)]
 
-if __name__ == '__main__':
+    def getCnt(number):
+        for i in range(1, number):
+            if number % i == 0:
+                cnt[number] += i
+        return cnt[number]
+
     for i in range(2, 10000):
         getCnt(i)
     ans = 0
@@ -57,7 +58,11 @@ if __name__ == '__main__':
                 ans += i
         except:
             pass
-    print(ans)
+    
+    return ans
+
+if __name__ == '__main__':
+    print(euler_21())
 
 # vim: set sw=4, ts=4
 ```

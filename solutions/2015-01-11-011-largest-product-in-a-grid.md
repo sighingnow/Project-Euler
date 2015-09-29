@@ -1,6 +1,6 @@
 ---
 title: Problem 11. Largest product in a grid
-author: DHDave
+author: He Tao
 date: 2015-01-11
 layout: post
 ---
@@ -77,37 +77,41 @@ What is the product of four adjacent numbers in the same direction (up, down, le
 #! /usr/bin/env python
 # -*- coding: utf-8
 
-num = [[0 for i in range(0, 20)] for j in range(0, 20)]
-with open('data.txt', 'r') as fp:
-    text = fp.read().split('\n')
+def euler_11():
+    num = [[0 for i in range(0, 20)] for j in range(0, 20)]
+    with open('data.txt', 'r') as fp:
+        text = fp.read().split('\n')
+        for i in range(0, 20):
+            text[i] = text[i].split(' ')
+        for i in range(0, 20):
+            for j in range(0, 20):
+                num[i][j] = int(text[i][j])
+
+    def calc(a, b, c, d):
+        return a*b*c*d
+
+    ans = 0
+
     for i in range(0, 20):
-        text[i] = text[i].split(' ')
-    for i in range(0, 20):
+        for j in range(0, 17):
+            ans = max(ans, calc(num[i][j], num[i][j+1], num[i][j+2], num[i][j+3]))
+
+    for i in range(0, 17):
         for j in range(0, 20):
-            num[i][j] = int(text[i][j])
+            ans = max(ans, calc(num[i][j], num[i+1][j], num[i+2][j], num[i+3][j]))
 
-def calc(a, b, c, d):
-    return a*b*c*d
+    for i in range(0, 17):
+        for j in range(0, 17):
+            ans = max(ans, calc(num[i][j], num[i+1][j+1], num[i+2][j+2], num[i+3][j+3]))
 
-ans = 0
+    for i in range(3, 20):
+        for j in range(0, 17):
+            ans = max(ans, calc(num[i][j], num[i-1][j+1], num[i-2][j+2], num[i-3][j+3]))
 
-for i in range(0, 20):
-    for j in range(0, 17):
-        ans = max(ans, calc(num[i][j], num[i][j+1], num[i][j+2], num[i][j+3]))
+    return ans
 
-for i in range(0, 17):
-    for j in range(0, 20):
-        ans = max(ans, calc(num[i][j], num[i+1][j], num[i+2][j], num[i+3][j]))
-
-for i in range(0, 17):
-    for j in range(0, 17):
-        ans = max(ans, calc(num[i][j], num[i+1][j+1], num[i+2][j+2], num[i+3][j+3]))
-
-for i in range(3, 20):
-    for j in range(0, 17):
-        ans = max(ans, calc(num[i][j], num[i-1][j+1], num[i-2][j+2], num[i-3][j+3]))
-
-print(ans)
+if __name__ == '__main__':
+    print(euler_11())
 
 # vim: set sw=4, ts=4, fileencoding=utf-8
 ```

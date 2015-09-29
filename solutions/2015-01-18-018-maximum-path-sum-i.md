@@ -1,6 +1,6 @@
 ---
 title: Problem 18. Maximum path sum I
-author: DHDave
+author: He Tao
 date: 2015-01-18
 layout: post
 ---
@@ -91,23 +91,27 @@ Find the maximum total from top to bottom of the triangle below:
 #! /usr/bin/env python
 # -*- coding: utf-8
 
-num = [[0] for i in range(0, 16)]
-raw = 1
-dp = [[0 for i in range(0, 16)] for j in range(0, 16)]
+def euler_18():
+    num = [[0] for i in range(0, 16)]
+    raw = 1
+    dp = [[0 for i in range(0, 16)] for j in range(0, 16)]
 
-with open("index.txt", "r") as fp:
-    s = fp.read().split('\n')
-    for t in s:
-        t = t.split(' ')
-        for i in range(0, t.__len__()):
-            num[raw].append(int(t[i]))
-        raw += 1
+    with open("index.txt", "r") as fp:
+        s = fp.read().split('\n')
+        for t in s:
+            t = t.split(' ')
+            for i in range(0, t.__len__()):
+                num[raw].append(int(t[i]))
+            raw += 1
 
-for i in range(1, 16):
-    for j in range(1, i+1):
-        dp[i][j] = max(dp[i-1][j-1], dp[i-1][j]) + num[i][j]
+    for i in range(1, 16):
+        for j in range(1, i+1):
+            dp[i][j] = max(dp[i-1][j-1], dp[i-1][j]) + num[i][j]
 
-print(max(dp[15]))
+    return max(dp[15])
+
+if __name__ == '__main__':
+    print(euler_18())
 
 # vim: set sw=4, ts=4, fileencoding=utf-8
 ```

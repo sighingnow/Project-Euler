@@ -1,6 +1,6 @@
 ---
 title: Problem 36. Double-base palindromes
-author: DHDave
+author: He Tao
 date: 2015-02-06
 layout: post
 ---
@@ -37,25 +37,29 @@ Find the sum of all numbers, less than one million, which are palindromic in bas
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-def judge(n):
-    s = str(n)
-    l = len(s)
-    for i in range(0, l):
-        if s[i] != s[l-1-i]:
-            return False
-    s = bin(n)[2:]
-    l = len(s)
-    for i in range(0, l):
-        if s[i] != s[l-1-i]:
-            return False
-    return True
+def euler_36():
 
-if __name__ == '__main__':
+    def judge(n):
+        s = str(n)
+        l = len(s)
+        for i in range(0, l):
+            if s[i] != s[l-1-i]:
+                return False
+        s = bin(n)[2:]
+        l = len(s)
+        for i in range(0, l):
+            if s[i] != s[l-1-i]:
+                return False
+        return True
+
     ans = 0
     for i in range(1, 1000000, 2):
         if judge(i):
             ans += i
-    print(ans)
+    return ans
+
+if __name__ == '__main__':
+    print(euler_36())
 
 # vim: set sw=4, ts=4
 ```

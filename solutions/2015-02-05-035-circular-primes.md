@@ -1,6 +1,6 @@
 ---
 title: Problem 35. Circular primes
-author: DHDave
+author: He Tao
 date: 2015-02-05
 layout: post
 ---
@@ -35,33 +35,38 @@ How many circular primes are there below one million?
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-isprime = [True for i in range(0, 1000000)]
-flag = [False for i in range(0, 1000000)]
+def euler_35():
 
-def precess():
-    isprime[0:2] = [False, False]
-    for i in range(2, 1000000):
-        if isprime[i]:
-            n = i + i
-            while n < 1000000:
-                isprime[n] = False
-                n += i
+    isprime = [True for i in range(0, 1000000)]
+    flag = [False for i in range(0, 1000000)]
 
-def rotate(n):
-    m, n = len(str(n)), str(n)
-    for i in range(0, m):
-        k = int(n[i:m]+n[0:i])
-        flag[k] = True
-        if not isprime[k]:
-            return False
-    return True
+    def precess():
+        isprime[0:2] = [False, False]
+        for i in range(2, 1000000):
+            if isprime[i]:
+                n = i + i
+                while n < 1000000:
+                    isprime[n] = False
+                    n += i
 
-if __name__ == '__main__':
+    def rotate(n):
+        m, n = len(str(n)), str(n)
+        for i in range(0, m):
+            k = int(n[i:m]+n[0:i])
+            flag[k] = True
+            if not isprime[k]:
+                return False
+        return True
+
     cnt = 0
     precess()
     for i in range(2, 1000000):
         if rotate(i):
             cnt += 1
-    print(cnt)
+    return cnt
+
+if __name__ == '__main__':
+    print(euler_35())
+
 # vim: set sw=4, ts=4
 ```

@@ -1,6 +1,6 @@
 ---
 title: Problem 23. Non-abundant sums
-author: DHDave
+author: He Tao
 date: 2015-01-23
 layout: post
 ---
@@ -39,19 +39,20 @@ Find the sum of all the positive integers which cannot be written as the sum of 
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-bound = 28123
-flag = [False for i in range(0, bound+1)]
-number = []
+def euler_23():
 
-def calNum(n):
-    adds = 0
-    for i in range(1, n):
-        if n % i == 0:
-            adds += i
-    if adds > n:
-        number.append(n)
+    bound = 28123
+    flag = [False for i in range(0, bound+1)]
+    number = []
 
-if __name__ == '__main__':
+    def calNum(n):
+        adds = 0
+        for i in range(1, n):
+            if n % i == 0:
+                adds += i
+        if adds > n:
+            number.append(n)
+
     for i in range(2, bound+1):
         calNum(i)
     for i in number:
@@ -64,7 +65,10 @@ if __name__ == '__main__':
     for i in range(0, bound+1):
         if not flag[i]:
             ans += i
-    print(ans)
+    return ans
+
+if __name__ == '__main__':
+    print(euler_23())
 
 # vim: set sw=4, ts=4
 ```

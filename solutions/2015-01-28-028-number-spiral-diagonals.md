@@ -1,6 +1,6 @@
 ---
 title: Problem 28. Number spiral diagonals
-author: DHDave
+author: He Tao
 date: 2015-01-28
 layout: post
 ---
@@ -54,14 +54,17 @@ What is the sum of the numbers on the diagonals in a 1001 by 1001 spiral formed 
 #! /usr/bin/env python
 # -*- coding: utf-8
 
-if __name__ == '__main__':
+def euler_28():
     sum = 1
     for i in range(3, 1002, 2):
         sum += i*i
         sum += i*i-i+1;
         sum += i*i-2*i+2;
         sum += i*i-3*i+3;
-    print(sum)
+    return sum
+
+if __name__ == '__main__':
+    print(euler_28())
 
 # vim: set sw=4, ts=4
 ```

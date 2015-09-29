@@ -1,6 +1,6 @@
 ---
 title: Problem 8. Largest product in a series
-author: DHDave
+author: He Tao
 date: 2015-01-08
 layout: post
 ---
@@ -95,18 +95,22 @@ number = '\
 05886116467109405077541002256983155200055935729725\
 71636269561882670428252483600823257530420752963450\
 '
-
-def mult(num):
-    ans = 1
-    for n in num:
-        ans *= int(n)
-    return ans
             
-if __name__ == '__main__':
+def euler_8():
+
+    def mult(num):
+        ans = 1
+        for n in num:
+            ans *= int(n)
+        return ans
+
     ans = -1
     for i in range(0, 1000-13):
         ans = max(ans, mult(number[i:i+13]))
-    print(ans)
+    return ans
+
+if __name__ == '__main__':
+    print(euler_8())
 
 # vim: set sw=4, ts=4
 ```
