@@ -86,4 +86,4 @@ License
 
 The MIT License (MIT)
 
-Copyright (c) 2015 He Tao
+Copyright (c) 2015-2016 He Tao
