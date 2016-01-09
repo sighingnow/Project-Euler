@@ -72,8 +72,8 @@ def euler_14():
     for i in range(1, 1000001):
         if num[i] == 0:
             num[i] = collatz(i)
-            if num[i] > num[max_index]:
-                max_index = i
+        if num[i] >= num[max_index]:
+            max_index = i
 
     return max_index
 

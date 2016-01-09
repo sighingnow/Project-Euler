@@ -87,7 +87,7 @@ def euler_12():
 
     return start
 
-if __main__ == '__main__':
+if __name__ == '__main__':
     print(euler_12())
 
 # vim: set sw=4, ts=4, fileencoding=utf-8
