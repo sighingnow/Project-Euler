@@ -11,7 +11,7 @@ Let d(n) be defined as the sum of proper divisors of n (numbers less than n whic
 If d(a) = b and d(b) = a, where a ≠ b, then a and b are an amicable pair and each of a and b are called amicable numbers.
 
 For example, the proper divisors of 220 are 1, 2, 4, 5, 10, 11, 20, 22, 44, 55 and 110; therefore d(220) = 284. The proper divisors of 284 are 1, 2, 4, 71 and 142; so d(284) = 220.
-<!--more-->
+
 Evaluate the sum of all the amicable numbers under 10000.
 
 [Problem 21. Amicable numbers](https://projecteuler.net/problem=21 "Problem 21")
@@ -34,7 +34,7 @@ d(n)定义为n 的所有真因子（小于 n 且能整除 n 的整数）之和�
 
 + Python
 
-```python
+~~~python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -58,11 +58,11 @@ def euler_21():
                 ans += i
         except:
             pass
-    
+
     return ans
 
 if __name__ == '__main__':
     print(euler_21())
 
 # vim: set sw=4, ts=4
-```
+~~~

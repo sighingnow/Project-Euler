@@ -6,13 +6,15 @@ layout: post
 ---
 
 ## 题目
+
 The prime factors of 13195 are 5, 7, 13 and 29.
 
 What is the largest prime factor of the number 600851475143 ?
 
 [Problem 3. Largest prime factor](https://projecteuler.net/problem=3 "Problem 3")
-<!--more-->
+
 ## 翻译
+
 13195的质数因子有5,7,13和29.
 
 600851475143的最大质数因子是多少？
@@ -25,7 +27,7 @@ What is the largest prime factor of the number 600851475143 ?
 
 + Python
 
-```python
+~~~python
 #! /usr/bin/env python
 # -*- coding: utf-8
 
@@ -41,11 +43,11 @@ if __name__ == '__main__':
     print(euler_3())
 
 # vim: set sw=4, ts=4
-```
+~~~
 
 + Haskell
 
-```haskell
+~~~haskell
 import Data.List
 
 main :: IO ()
@@ -61,4 +63,4 @@ primefactors n = factor n primes where
         | n `mod` p == 0    = p : factor (n `div` p) (p:ps)
         | otherwise         = factor n ps
     primes = 2 : filter (null . tail . primefactors) [3, 5 ..]
-```
+~~~

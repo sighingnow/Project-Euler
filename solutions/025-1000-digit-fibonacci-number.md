@@ -12,7 +12,7 @@ The Fibonacci sequence is defined by the recurrence relation:
 $$ Fn = Fn−1 + Fn−2,\ where\ F1 = 1\ and\ F2 = 1. $$
 
 Hence the first 12 terms will be:
-<!--more-->
+
 <pre>
     F1 = 1
     F2 = 1
@@ -69,7 +69,7 @@ $$ Fn = Fn−1 + Fn−2, F1 = 1, F2 = 1. $$
 
 + Python
 
-```python
+~~~python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -84,4 +84,16 @@ if __name__ == '__main__':
     print(euler_25())
 
 # vim: set sw=4, ts=4
-```
+~~~
+
++ Haskell
+
+~~~haskell
+main :: IO ()
+main = print euler_25
+
+euler_25 :: Int
+euler_25 = length $ takeWhile ((< 1000) . length . show) fib
+    where
+        fib = fix (scanl (+) 0 . (1:))
+~~~

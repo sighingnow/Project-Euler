@@ -16,7 +16,7 @@ It is possible to make £2 in the following way:
     1 * £1 + 1 * 50p + 2 * 20p + 1 * 5p + 1 * 2p + 3 * 1p
 
 How many different ways can £2 be made using any number of coins?
-<!--more-->
+
 [Problem 31. Coin sums](https://projecteuler.net/problem=31 "Problem 31")
 
 ## 翻译
@@ -41,7 +41,7 @@ How many different ways can £2 be made using any number of coins?
 
 + Python
 
-```python
+~~~python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -60,11 +60,11 @@ if __name__ == '__main__':
     print(euler_31())
 
 # vim: set sw=4, ts=4
-```
+~~~
 
 Better Solution (faster):
 
-```python
+~~~python
 # more optimized algorithm.
 def euler_31():
     dp = [0 for i in range(0, 201)]
@@ -78,4 +78,4 @@ def euler_31():
 
 if __name__ == '__main__':
     print(euler_31())
-```
+~~~

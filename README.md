@@ -1,4 +1,4 @@
-Project-euler-solutions
+project-euler solutions
 ========================
 
 Overview
@@ -15,7 +15,7 @@ What's project-euler ?
 Usage
 -----
 
-The directory *"solutions"* includes all solutions in Markdown text format. 
+The directory *"solutions"* includes all solutions in Markdown text format.
 
 For more details of these problems, please visit [projecteuler](https://projecteuler.net/ "projecteuler").
 
@@ -25,9 +25,9 @@ Now
 All problems can be found at [Project Euler](https://projecteuler.net/).
 
 | NO.  |   State            |   Answer           |   Language                              |
-|:----:|:------------------:|--------------------|:---------------------------------------:|
+|:----:|:------------------:|--------------------|-----------------------------------------|
 | 001  | :white_check_mark: | 233168             | Python                                  |
-| 002  | :white_check_mark: | 4613732            | Python                                  |
+| 002  | :white_check_mark: | 4613732            | Python, Haskell                         |
 | 003  | :white_check_mark: | 6857               | Python, Haskell                         |
 | 004  | :white_check_mark: | 906609             | Python                                  |
 | 005  | :white_check_mark: | 232792560          | Python                                  |
@@ -50,7 +50,7 @@ All problems can be found at [Project Euler](https://projecteuler.net/).
 | 022  | :white_check_mark: | 871198282          | Python                                  |
 | 023  | :white_check_mark: | 4179871            | Python                                  |
 | 024  | :white_check_mark: | 2783915460         | Python                                  |
-| 025  | :white_check_mark: | 4782               | Python                                  |
+| 025  | :white_check_mark: | 4782               | Python, Haskell                         |
 | 026  | :white_check_mark: | 983                | Python                                  |
 | 027  | :white_check_mark: | -59231             | Python                                  |
 | 028  | :white_check_mark: | 669171001          | Python                                  |
@@ -76,10 +76,11 @@ All problems can be found at [Project Euler](https://projecteuler.net/).
 | 048  | :white_check_mark: | 9110846700         | Python                                  |
 | 049  | :white_check_mark: | 296962999629       | Python                                  |
 | 050  | :white_check_mark: | 997651             | Python                                  |
+| 099  | :white_check_mark: | 709                | Python                                  |
+| 100  | :white_check_mark: | 756872327473       | Python, Haskell                         |
 | 164  | :white_check_mark: | 378158756814587    | Python, Haskell                         |
 | 500  | :white_check_mark: | 35407281           | Python                                  |
-| 501  | :white_check_mark: | 197912312715       | Python                                  |
-
+| 501  | :white_check_mark: | 197912312715       |                                         |
 
 License
 -------

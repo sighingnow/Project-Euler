@@ -6,8 +6,9 @@ layout: post
 ---
 
 ## 题目
+
 Work out the first ten digits of the sum of the following one-hundred 50-digit numbers.
-<!--more-->
+
 <center><pre>
 37107287533902102798797998220837590246510135740250
 46376937677490009712648124896970078050417018260538
@@ -113,6 +114,7 @@ Work out the first ten digits of the sum of the following one-hundred 50-digit n
 [Problem 13. Large sum](https://projecteuler.net/problem=13 "Problem 13")
 
 ## 翻译
+
 找出以下100个50位数之和的前十位数字。
 <center><pre>
 37107287533902102798797998220837590246510135740250
@@ -216,6 +218,7 @@ Work out the first ten digits of the sum of the following one-hundred 50-digit n
 20849603980134001723930671666823555245252804609722
 53503534226472524250874054075591789781264330331690
 </pre></center>
+
 [题目13:找出100个50位数之和的前十位数字](http://pe.spiritzhang.com/index.php/2011-05-11-09-44-54/14-1310050 "题目13")
 
 ## 题解(Python)
@@ -224,7 +227,7 @@ Work out the first ten digits of the sum of the following one-hundred 50-digit n
 
 + Python
 
-```python
+~~~python
 #! /usr/bin/env python
 # -*- coding: utf-8
 
@@ -241,4 +244,4 @@ if __name__ == '__main__':
     print(euler_13())
 
 # vim: set sw=4, ts=4, fileencoding=utf-8
-```
+~~~

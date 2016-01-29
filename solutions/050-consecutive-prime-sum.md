@@ -12,7 +12,7 @@ $$ 41 = 2 + 3 + 5 + 7 + 11 + 13 $$
 This is the longest sum of consecutive primes that adds to a prime below one-hundred.
 
 The longest sum of consecutive primes below one-thousand that adds to a prime, contains 21 terms, and is equal to 953.
-<!--more-->
+
 
 Which prime, below one-million, can be written as the sum of the most consecutive primes?
 
@@ -40,7 +40,7 @@ $$ 41 = 2 + 3 + 5 + 7 + 11 + 13 $$
 
 + Python
 
-```python
+~~~python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -78,4 +78,4 @@ if __name__ == '__main__':
     print(euler_50())
 
 # vim: set sw=4, ts=4
-```
+~~~

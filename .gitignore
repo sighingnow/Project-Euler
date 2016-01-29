@@ -54,6 +54,6 @@ docs/_build/
 target/
 
 # overview pdf files.
-Overview/
+overview/
 _site/
 _drafts/

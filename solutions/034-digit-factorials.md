@@ -7,17 +7,17 @@ layout: post
 
 ## 题目
 
-145 is a curious number, as 1! + 4! + 5! = 1 + 24 + 120 = 145.
+145 is a curious number, as $1! + 4! + 5! = 1 + 24 + 120 = 145$.
 
 Find the sum of all numbers which are equal to the sum of the factorial of their digits.
 
 Note: as 1! = 1 and 2! = 2 are not sums they are not included.
-<!--more-->
+
 [Problem 34. Digit factorials](https://projecteuler.net/problem=34 "Problem 34")
 
 ## 翻译
 
-145 是一个奇怪的数字, 因为 1! + 4! + 5! = 1 + 24 + 120 = 145.
+145 是一个奇怪的数字, 因为 $1! + 4! + 5! = 1 + 24 + 120 = 145$.
 
 找出所有等于各位数字阶乘之和的数字之和。
 
@@ -33,7 +33,7 @@ Note: as 1! = 1 and 2! = 2 are not sums they are not included.
 
 + Python
 
-```python
+~~~python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -57,4 +57,4 @@ if __name__ == '__main__':
     print(euler_34())
 
 # vim: set sw=4, ts=4
-```
+~~~

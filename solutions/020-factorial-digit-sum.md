@@ -13,7 +13,7 @@ For example, $$ 10! = 10 \times 9 \times ... \times 3 \times 2 \times 1 = 362880
 and the sum of the digits in the number 10! is $$ 3 + 6 + 2 + 8 + 8 + 0 + 0 = 27.$$
 
 Find the sum of the digits in the number 100!
-<!--more-->
+
 [Problem 20. Factorial digit sum](https://projecteuler.net/problem=20 "Problem 20")
 
 ## 翻译
@@ -33,7 +33,7 @@ $$ n! = n \times (n − 1) \times ... \times 3 \times 2  1 $$
 
 + Python
 
-```python
+~~~python
 #! /usr/bin/env python
 # -*- coding: utf-8
 
@@ -47,5 +47,5 @@ if __name__ == '__main__':
     print(euler_20())
 
 # vim: set sw=4, ts=4
-```
+~~~
 

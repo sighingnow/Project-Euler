@@ -6,15 +6,17 @@ layout: post
 ---
 
 ## 题目
+
 If the numbers 1 to 5 are written out in words: one, two, three, four, five, then there are 3 + 3 + 5 + 4 + 4 = 19 letters used in total.
 
 If all the numbers from 1 to 1000 (one thousand) inclusive were written out in words, how many letters would be used?
-<!--more-->
+
 *NOTE*: Do not count spaces or hyphens. For example, 342 (three hundred and forty-two) contains 23 letters and 115 (one hundred and fifteen) contains 20 letters. The use of "and" when writing out numbers is in compliance with British usage.
 
 [Problem 17. Number letter counts](https://projecteuler.net/problem=17 "Problem 17")
 
 ## 翻译
+
 如果用英文写出数字1到5: one, two, three, four, five, 那么一共需要3 + 3 + 5 + 4 + 4 = 19个字母。
 
 如果数字1到1000（包含1000）用英文写出，那么一共需要多少个字母？
@@ -47,7 +49,7 @@ If all the numbers from 1 to 1000 (one thousand) inclusive were written out in w
 
 + Python
 
-```python
+~~~python
 #! /usr/bin/env python
 # -*- coding: utf-8
 
@@ -77,7 +79,7 @@ if __name__ == '__main__':
     print(euler_17())
 
 # vim: set sw=4, ts=4, fileencoding=utf-8
-```
+~~~
 
-## 参考(Reference): 
+## 参考(Reference):
 1. [[Project Euler] Problem 17 - xiatwhu - 博客园](http://www.cnblogs.com/xianglan/archive/2011/03/03/1970334.html)

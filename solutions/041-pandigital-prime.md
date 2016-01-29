@@ -10,7 +10,7 @@ layout: post
 We shall say that an _n-digit_ number is pandigital if it makes use of all the digits 1 to n exactly once. For example, 2143 is a 4-digit pandigital and is also prime.
 
 What is the largest _n-digit_ pandigital prime that exists?
-<!--more-->
+
 [Problem 41. Pandigital prime](https://projecteuler.net/problem=41 "Problem 41")
 
 ## 翻译
@@ -27,7 +27,7 @@ What is the largest _n-digit_ pandigital prime that exists?
 
 观察累加和的特点：
 
-```
+~~~
 1 1
 2 3
 3 6
@@ -37,7 +37,7 @@ What is the largest _n-digit_ pandigital prime that exists?
 7 28
 8 36
 9 45
-```
+~~~
 
 猜测n的值为7（判断累加和能否被3整除）,开始枚举7位数的全排列。同时，因为要找最大的，所以从大往小找。
 
@@ -45,7 +45,7 @@ What is the largest _n-digit_ pandigital prime that exists?
 
 + Python
 
-```python
+~~~python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -71,4 +71,4 @@ if __name__ == '__main__':
     print(euler_41())
 
 # vim: set sw=4, ts=4
-```
+~~~

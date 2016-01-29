@@ -6,14 +6,16 @@ layout: post
 ---
 
 ## 题目
-The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
+
+The sum of the primes below 10 is $2 + 3 + 5 + 7 = 17$.
 
 Find the sum of all the primes below two million.
 
 [Problem 10. Summation of primes](https://projecteuler.net/problem=10 "Problem 10")
-<!--more-->
+
 ## 翻译
-10以下的质数的和是2 + 3 + 5 + 7 = 17.
+
+10以下的质数的和是 $2 + 3 + 5 + 7 = 17$.
 
 找出两百万以下所有质数的和。
 
@@ -25,7 +27,7 @@ Find the sum of all the primes below two million.
 
 + Python
 
-```python
+~~~python
 #! /usr/bin/env python
 # -*- coding: utf-8
 
@@ -51,5 +53,5 @@ if __name__ == '__main__':
     print(euler_10())
 
 # vim: set sw=4, ts=4
-```
+~~~
 

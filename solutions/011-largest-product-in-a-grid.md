@@ -6,8 +6,9 @@ layout: post
 ---
 
 ## 题目
-In the 20×20 grid below, four numbers along a diagonal line have been marked in red.
-<!--more-->
+
+In the $20\times20$ grid below, four numbers along a diagonal line have been marked in red.
+
 <center><pre>
 08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08
 49 49 99 40 17 81 18 57 60 87 17 40 98 43 69 48 04 56 62 00
@@ -31,7 +32,7 @@ In the 20×20 grid below, four numbers along a diagonal line have been marked in
 01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48
 </pre></center>
 
-The product of these numbers is $$ 26 × 63 × 78 × 14 = 1788696. $$
+The product of these numbers is $$ 26 \times 63 \times 78 \times 14 = 1788696. $$
 
 What is the product of four adjacent numbers in the same direction (up, down, left, right, or diagonally) in the 20×20 grid?
 
@@ -39,7 +40,8 @@ What is the product of four adjacent numbers in the same direction (up, down, le
 [Problem 11. Summation of primes](https://projecteuler.net/problem=11 "Problem 11")
 
 ## 翻译
-在以下这个20×20的网格中，四个处于同一对角线上的相邻数字用红色标了出来：
+
+在以下这个$20\times20$的网格中，四个处于同一对角线上的相邻数字用红色标了出来：
 <center><pre>
 08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08
 49 49 99 40 17 81 18 57 60 87 17 40 98 43 69 48 04 56 62 00
@@ -62,10 +64,10 @@ What is the product of four adjacent numbers in the same direction (up, down, le
 20 73 35 29 78 31 90 01 74 31 49 71 48 86 81 16 23 57 05 54
 01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48
 </pre></center>
-这四个数字的乘积是：$$ 26 × 63 × 78 × 14 = 1788696. $$
-在这个20×20网格中，处于任何方向上（上，下，左，右或者对角线）的四个相邻数字的乘积的最大值是多少？
+这四个数字的乘积是：$$ 26 \times 63 \times 78 \times 14 = 1788696. $$
+在这个 $20\times20$ 网格中，处于任何方向上（上，下，左，右或者对角线）的四个相邻数字的乘积的最大值是多少？
 
-[题目11:在20×20的网格中同一直线上四个数的最大乘积是多少](http://pe.spiritzhang.com/index.php/2011-05-11-09-44-54/12-1120t20 "题目11")
+[题目11:在$20\times20$的网格中同一直线上四个数的最大乘积是多少](http://pe.spiritzhang.com/index.php/2011-05-11-09-44-54/12-1120t20 "题目11")
 
 ## 题解(Python)
 
@@ -73,7 +75,7 @@ What is the product of four adjacent numbers in the same direction (up, down, le
 
 + Python
 
-```python
+~~~python
 #! /usr/bin/env python
 # -*- coding: utf-8
 
@@ -114,5 +116,5 @@ if __name__ == '__main__':
     print(euler_11())
 
 # vim: set sw=4, ts=4, fileencoding=utf-8
-```
+~~~
 

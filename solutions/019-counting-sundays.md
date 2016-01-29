@@ -19,7 +19,7 @@ You are given the following information, but you may prefer to do some research 
 + A leap year occurs on any year evenly divisible by 4, but not on a century unless it is divisible by 400.
 
 How many Sundays fell on the first of the month during the twentieth century (1 Jan 1901 to 31 Dec 2000)?
-<!--more-->
+
 [Problem 19. Counting Sundays](https://projecteuler.net/problem=19 "Problem 19")
 
 ## 翻译
@@ -56,7 +56,7 @@ $$ w = (y+\lfloor{y/4}\rfloor+\lfloor{c/4}\rfloor-2c+\lfloor{26(m+1)/10}\rfloor+
 
 + Python
 
-```python
+~~~python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -83,4 +83,4 @@ if __name__ == '__main__':
     print(euler_19())
 
 # vim: set sw=4, ts=4
-```
+~~~

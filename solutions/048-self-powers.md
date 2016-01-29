@@ -13,7 +13,7 @@ Find the last ten digits of the series, $$ 1^1 + 2^2 + 3^3 + ... + 1000^1000 $$
 
 [Problem 48. Self powers](https://projecteuler.net/problem=48 "Problem 48")
 
-<!--more-->
+
 ## 翻译
 
 $$ 1^1 + 2^2 + 3^3 + ... + 10^10 = 10405071317 $$
@@ -28,7 +28,7 @@ $$ 1^1 + 2^2 + 3^3 + ... + 1000^1000的最后十位是什么 $$
 
 + Python
 
-```python
+~~~python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -39,4 +39,4 @@ if __name__ == '__main__':
     print(euler_48())
 
 # vim: set sw=4, ts=4
-```
+~~~

@@ -6,13 +6,15 @@ layout: post
 ---
 
 ## 题目
+
 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
 
 Find the sum of all the multiples of 3 or 5 below 1000.
-<!--more-->
+
 [Problem 1. Multiples of 3 and 5](https://projecteuler.net/index.php?section=problems&id=1 "Problem 1")
 
 ## 翻译
+
 10以下的自然数中，属于3和5的倍数的有3,5,6和9，它们之和是23.
 
 找出1000以下的自然数中，属于3和5的倍数的数字之和。
@@ -25,7 +27,7 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 
 + Python
 
-```python
+~~~python
 #! /usr/bin/env python
 # -*- coding: utf-8
 
@@ -34,4 +36,4 @@ def euler_1():
 
 if __name__ == '__main__':
     print(euler_1())
-```
+~~~

@@ -9,16 +9,16 @@ layout: post
 
 The number, 1406357289, is a 0 to 9 pandigital number because it is made up of each of the digits 0 to 9 in some order, but it also has a rather interesting sub-string divisibility property.
 
-Let <i>d</i><sub>1</sub> be the 1st digit, <i>d</i><sub>2</sub> be the 2nd digit, and so on. In this way, we note the following:
-<!--more-->
+Let $d_1$ be the 1st digit, $d_2$ be the 2nd digit, and so on. In this way, we note the following:
+
 <ul>
-<li><i>d</i><sub>2</sub><i>d</i><sub>3</sub><i>d</i><sub>4</sub>=406 is divisible by 2</li>
-<li><i>d</i><sub>3</sub><i>d</i><sub>4</sub><i>d</i><sub>5</sub>=063 is divisible by 3</li>
-<li><i>d</i><sub>4</sub><i>d</i><sub>5</sub><i>d</i><sub>6</sub>=635 is divisible by 5</li>
-<li><i>d</i><sub>5</sub><i>d</i><sub>6</sub><i>d</i><sub>7</sub>=357 is divisible by 7</li>
-<li><i>d</i><sub>6</sub><i>d</i><sub>7</sub><i>d</i><sub>8</sub>=572 is divisible by 11</li>
-<li><i>d</i><sub>7</sub><i>d</i><sub>8</sub><i>d</i><sub>9</sub>=728 is divisible by 13</li>
-<li><i>d</i><sub>8</sub><i>d</i><sub>9</sub><i>d</i><sub>10</sub>=289 is divisible by 17</li>
+<li>$d2_+d3_+d4_=406$ is divisible by 2</li>
+<li>$d3_+d4_+d5_=063$ is divisible by 3</li>
+<li>$d4_+d5_+d6_=635$ is divisible by 5</li>
+<li>$d5_+d6_+d7_=357$ is divisible by 7</li>
+<li>$d6_+d7_+d8_=572$ is divisible by 11</li>
+<li>$d7_+d8_+d9_=728$ is divisible by 13</li>
+<li>$d8_+d9_+d10_=289$ is divisible by 17</li>
 </ul>
 
 Find the sum of all 0 to 9 pandigital numbers with this property.
@@ -29,16 +29,16 @@ Find the sum of all 0 to 9 pandigital numbers with this property.
 
 1406357289是一个pandigital数，因为它包含了0到9之间每个数字且只包含了一次。此外它还有一个有趣的子串整除性质。
 
-令<i>d</i><sub>1</sub>表示其第一位数字，<i>d</i><sub>2</sub>表示第二位，以此类推。这样我们可以得到：
+令$d_1$表示其第一位数字，$d_2$表示第二位，以此类推。这样我们可以得到：
 
 <ul>
-<li><i>d</i><sub>2</sub><i>d</i><sub>3</sub><i>d</i><sub>4</sub>=406 is divisible by 2</li>
-<li><i>d</i><sub>3</sub><i>d</i><sub>4</sub><i>d</i><sub>5</sub>=063 is divisible by 3</li>
-<li><i>d</i><sub>4</sub><i>d</i><sub>5</sub><i>d</i><sub>6</sub>=635 is divisible by 5</li>
-<li><i>d</i><sub>5</sub><i>d</i><sub>6</sub><i>d</i><sub>7</sub>=357 is divisible by 7</li>
-<li><i>d</i><sub>6</sub><i>d</i><sub>7</sub><i>d</i><sub>8</sub>=572 is divisible by 11</li>
-<li><i>d</i><sub>7</sub><i>d</i><sub>8</sub><i>d</i><sub>9</sub>=728 is divisible by 13</li>
-<li><i>d</i><sub>8</sub><i>d</i><sub>9</sub><i>d</i><sub>10</sub>=289 is divisible by 17</li>
+<li>$d2_+d3_+d4_=406$ is divisible by 2</li>
+<li>$d3_+d4_+d5_=063$ is divisible by 3</li>
+<li>$d4_+d5_+d6_=635$ is divisible by 5</li>
+<li>$d5_+d6_+d7_=357$ is divisible by 7</li>
+<li>$d6_+d7_+d8_=572$ is divisible by 11</li>
+<li>$d7_+d8_+d9_=728$ is divisible by 13</li>
+<li>$d8_+d9_+d10_=289$ is divisible by 17</li>
 </ul>
 
 求所有具有如上性质的0到9pandigital数的和。
@@ -51,7 +51,7 @@ Find the sum of all 0 to 9 pandigital numbers with this property.
 
 + Python
 
-```python
+~~~python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -80,6 +80,6 @@ def euler_43():
 
 if __name__ == '__main__':
     print(euler_43())
-    
+
 # vim: set sw=4, ts=4
-```
+~~~

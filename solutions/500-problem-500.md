@@ -11,16 +11,18 @@ The number of divisors of 120 is 16.
 
 In fact 120 is the smallest number having 16 divisors.
 
-Find the smallest number with 2<sup>500500</sup> divisors.
+Find the smallest number with $2^500500$ divisors.
 
 Give your answer modulo 500500507.
-<!--more-->
+
 
 [Problem 500. Problem 500!!!](https://projecteuler.net/problem=500 "Problem 500")
 
 ## 题解
 
-分析：
+答案(answer): 35407281
+
++ 分析
 
 引自[https://news.ycombinator.com/item?id=8977550](https://news.ycombinator.com/item?id=8977550)的关于此题的解答：
 
@@ -41,11 +43,9 @@ Give your answer modulo 500500507.
 
 > For 16 factors the number works out to be 120 (just like the example!). For numbers shown in the questions, sieving the prime takes some time, I also found it helpful to use a binary heap for speeding up finding the next smallest factors.
 
-答案(answer): 35407281
-
 + Python
 
-```python
+~~~python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -98,8 +98,9 @@ def euler_500():
 
     return mult
 
+
 if __name__ == '__main__':
     print(euler_500())
 
 # vim: set sw=4, ts=4
-```
+~~~

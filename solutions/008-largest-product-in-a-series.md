@@ -6,9 +6,11 @@ layout: post
 ---
 
 ## 题目
-The four adjacent digits in the 1000-digit number that have the greatest product are 
-<!--more-->
-<center>$$9 × 9 × 8 × 9 = 5832.$$</center>
+
+The four adjacent digits in the 1000-digit number that have the greatest product are
+
+$$ 9 \times 9 \times 8 \times 9 = 5832.$$
+
 <center><pre>
 73167176531330624919225119674426574742355349194934
 96983520312774506326239578318016984801869478851843
@@ -31,11 +33,13 @@ The four adjacent digits in the 1000-digit number that have the greatest product
 05886116467109405077541002256983155200055935729725
 71636269561882670428252483600823257530420752963450
 </pre></center>
+
 Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?
 
 [Problem 8. Largest product in a series](https://projecteuler.net/problem=8 "Problem 8")
 
 ## 翻译
+
 找出以下这个1000位的整数中连续13个数字的最大乘积。
 
 <center><pre>
@@ -69,7 +73,7 @@ Find the thirteen adjacent digits in the 1000-digit number that have the greates
 
 + Python
 
-```python
+~~~python
 #! /usr/bin/env python
 # -*- coding: utf-8
 
@@ -95,7 +99,7 @@ number = '\
 05886116467109405077541002256983155200055935729725\
 71636269561882670428252483600823257530420752963450\
 '
-            
+
 def euler_8():
 
     def mult(num):
@@ -113,4 +117,4 @@ if __name__ == '__main__':
     print(euler_8())
 
 # vim: set sw=4, ts=4
-```
+~~~

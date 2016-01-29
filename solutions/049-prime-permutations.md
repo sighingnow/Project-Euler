@@ -10,7 +10,7 @@ layout: post
 The arithmetic sequence, 1487, 4817, 8147, in which each of the terms increases by 3330, is unusual in two ways: (i) each of the three terms are prime, and, (ii) each of the 4-digit numbers are permutations of one another.
 
 There are no arithmetic sequences made up of three 1-, 2-, or 3-digit primes, exhibiting this property, but there is one other 4-digit increasing sequence.
-<!--more-->
+
 What 12-digit number do you form by concatenating the three terms in this sequence?
 
 [Problem 49. Prime permutations](https://projecteuler.net/problem=49 "Problem 49")
@@ -33,7 +33,7 @@ What 12-digit number do you form by concatenating the three terms in this sequen
 
 + Python
 
-```python
+~~~python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -62,4 +62,4 @@ if __name__ == '__main__':
     print(euler_49())
 
 # vim: set sw=4, ts=4
-```
+~~~

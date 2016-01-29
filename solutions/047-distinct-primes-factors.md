@@ -19,7 +19,7 @@ The first three consecutive numbers to have three distinct prime factors are:
     646 = 2 * 17 * 19
 
 Find the first four consecutive integers to have four distinct prime factors. What is the first of these numbers?
-<!--more-->
+
 
 [Problem 47. Distinct primes factors](https://projecteuler.net/problem=47 "Problem 47")
 
@@ -46,7 +46,7 @@ Find the first four consecutive integers to have four distinct prime factors. Wh
 
 + Python
 
-```python
+~~~python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -85,4 +85,4 @@ if __name__ == '__main__':
     print(euler_47())
 
 # vim: set sw=4, ts=4
-```
+~~~

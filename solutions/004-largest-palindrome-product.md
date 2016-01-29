@@ -6,13 +6,15 @@ layout: post
 ---
 
 ## 题目
+
 A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
 
 Find the largest palindrome made from the product of two 3-digit numbers.
 
 [Problem 4. Largest prime factor](https://projecteuler.net/problem=4 "Problem 4")
-<!--more-->
+
 ## 翻译
+
 一个回文数指的是从左向右和从右向左读都一样的数字。最大的由两个两位数乘积构成的回文数是9009 = 91 * 99.
 
 找出最大的有由两个三位数乘积构成的回文数。
@@ -25,7 +27,7 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 
 + Python
 
-```python
+~~~python
 #! /usr/bin/env python
 # -*- coding: utf-8
 
@@ -39,10 +41,10 @@ def euler_4():
             if a == b:
                 ans = max(ans, t)
     return ans
-                
+
 if __name__ == '__main__':
     print(euler_4())
 
 # vim: set sw=4, ts=4
-```
+~~~
 

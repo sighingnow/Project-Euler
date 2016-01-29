@@ -13,8 +13,8 @@ $$ 1634 = 1^4 + 6^4 + 3^4 + 4^4 $$
 $$ 8208 = 8^4 + 2^4 + 0^4 + 8^4 $$
 $$ 9474 = 9^4 + 4^4 + 7^4 + 4^4 $$
 
-As 1 = 1<sup>4</sup> is not a sum it is not included.
-<!--more-->
+As $1 = 1^4$ is not a sum it is not included.
+
 The sum of these numbers is 1634 + 8208 + 9474 = 19316.
 
 Find the sum of all the numbers that can be written as the sum of fifth powers of their digits.
@@ -29,7 +29,7 @@ $$ 1634 = 1^4 + 6^4 + 3^4 + 4^4 $$
 $$ 8208 = 8^4 + 2^4 + 0^4 + 8^4 $$
 $$ 9474 = 9^4 + 4^4 + 7^4 + 4^4 $$
 
-1 = 1<sup>4</sup>没有被算作在内因为它不是一个和。
+$1 = 1^4$没有被算作在内因为它不是一个和。
 
 这些数字的和是 1634 + 8208 + 9474 = 19316.
 
@@ -39,13 +39,13 @@ $$ 9474 = 9^4 + 4^4 + 7^4 + 4^4 $$
 
 ## 题解
 
-分析：7 * 9<sup>5</sup> = 413343, 因此，最多为一个六位数
+分析：$7 \times 9^5$ = 413343, 因此，最多为一个六位数
 
 答案(answer): 443839
 
 + Python
 
-```python
+~~~python
 #! /usr/bin/env python
 # -*- coding: utf-8
 
@@ -60,4 +60,4 @@ if __name__ == '__main__':
     print(euler_30())
 
 # vim: set sw=4, ts=4
-```
+~~~

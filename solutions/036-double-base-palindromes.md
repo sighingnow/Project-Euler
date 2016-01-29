@@ -7,17 +7,17 @@ layout: post
 
 ## 题目
 
-The decimal number, 585 = 1001001001<sub>2</sub>(binary), is palindromic in both bases.
+The decimal number, $585 = {1001001001}_{2}$(binary), is palindromic in both bases.
 
 Find the sum of all numbers, less than one million, which are palindromic in base 10 and base 2.
 
 (Please note that the palindromic number, in either base, may not include leading zeros.)
-<!--more-->
+
 [Problem 36. Double-base palindromes](https://projecteuler.net/problem=36 "Problem 36")
 
 ## 翻译
 
-十进制数字585 = 1001001001<sub>2</sub> (二进制),
+十进制数字$585 = {1001001001}_{2}$ (二进制),
 
 可以看出在十进制和二进制下都是回文（从左向右读和从右向左读都一样）。
 
@@ -33,7 +33,7 @@ Find the sum of all numbers, less than one million, which are palindromic in bas
 
 + Python
 
-```python
+~~~python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -62,4 +62,4 @@ if __name__ == '__main__':
     print(euler_36())
 
 # vim: set sw=4, ts=4
-```
+~~~
