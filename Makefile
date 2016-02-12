@@ -21,6 +21,10 @@ build:
 	$(PANDOC) $(META_FILE) `$(LS) $(MD_FILES)` $(PANDOC_FLAGS)
 .PHONY: build
 
+format:
+	@./format.sh
+.PHONY: format
+
 submit:
 	git push github master
 .PHONY: submit
