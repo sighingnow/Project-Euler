@@ -1,9 +1,5 @@
----
-title: Problem 47. Distinct primes factors
-author: He Tao
-date: 2015-02-17
-layout: post
----
+Problem 47. Distinct primes factors
+==================================
 
 ## 题目
 
@@ -44,7 +40,7 @@ Find the first four consecutive integers to have four distinct prime factors. Wh
 
 答案(answer): 134043
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python

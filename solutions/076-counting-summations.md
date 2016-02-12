@@ -35,7 +35,7 @@ How many different ways can one hundred be written as a sum of at least two posi
 
 答案(answer): 190569291
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python
@@ -59,7 +59,7 @@ if __name__ == '__main__':
 # vim: set sw=4, ts=4
 ~~~
 
-+ Haskell
+### Haskell
 
 ~~~haskell
 main :: IO ()

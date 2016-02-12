@@ -1,9 +1,5 @@
----
-title: Problem 28. Number spiral diagonals
-author: He Tao
-date: 2015-01-28
-layout: post
----
+Problem 28. Number spiral diagonals
+==================================
 
 ## 题目
 
@@ -44,11 +40,13 @@ What is the sum of the numbers on the diagonals in a 1001 by 1001 spiral formed 
 
 ## 题解
 
-分析：直接暴力求解，累加求和即可。
-
 答案(answer): 669171001
 
-+ Python
+### 分析
+
+直接暴力求解，累加求和即可。
+
+### Python
 
 ~~~python
 #! /usr/bin/env python

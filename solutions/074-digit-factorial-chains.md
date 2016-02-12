@@ -5,20 +5,20 @@ Problem 74. Digit factorial chains
 
 The number 145 is well known for the property that the sum of the factorial of its digits is equal to 145:
 
-$$ 1! + 4! + 5! = 1 + 24 + 120 = 145 $$
+$$1! + 4! + 5! = 1 + 24 + 120 = 145$$
 
 Perhaps less well known is 169, in that it produces the longest chain of numbers that link back to 169; it turns out that there are only three such
 loops that exist:
 
-+ $ 169 \to 363601 \to 1454 \to 169 $
-+ $ 871 \to 45361 \to 871 $
-+ $ 872 \to 45362 \to 872 $
++ $169 \to 363601 \to 1454 \to 169$
++ $871 \to 45361 \to 871$
++ $872 \to 45362 \to 872$
 
 It is not difficult to prove that EVERY starting number will eventually get stuck in a loop. For example,
 
-+ $ 69 \to 363600 \to 1454 \to 169 \to 363601 (\to 1454) $
-+ $ 78 \to 45360 \to 871 \to 45361 (\to 871) $
-+ $ 540 \to 145 (\to 145) $
++ $69 \to 363600 \to 1454 \to 169 \to 363601 (\to 1454)$
++ $78 \to 45360 \to 871 \to 45361 (\to 871)$
++ $540 \to 145 (\to 145)$
 
 Starting with 69 produces a chain of five non-repeating terms, but the longest non-repeating chain with a starting number below one million is sixty terms.
 
@@ -30,19 +30,19 @@ How many chains, with a starting number below one million, contain exactly sixty
 
 数字145有一个著名的性质：其所有位上数字的阶乘和等于它本身。
 
-$$ 1! + 4! + 5! = 1 + 24 + 120 = 145 $$
+$$1! + 4! + 5! = 1 + 24 + 120 = 145$$
 
 169不像145那么有名，但是169可以产生最长的能够连接回它自己的数字链。事实证明一共有三条这样的链：
 
-+ $ 169 \to 363601 \to 1454 \to 169 $
-+ $ 871 \to 45361 \to 871 $
-+ $ 872 \to 45362 \to 872 $
++ $169 \to 363601 \to 1454 \to 169$
++ $871 \to 45361 \to 871$
++ $872 \to 45362 \to 872$
 
 不难证明每一个数字最终都将陷入一个循环。例如：
 
-+ $ 69 \to 363600 \to 1454 \to 169 \to 363601 (\to 1454) $
-+ $ 78 \to 45360 \to 871 \to 45361 (\to 871) $
-+ $ 540 \to 145 (\to 145) $
++ $69 \to 363600 \to 1454 \to 169 \to 363601 (\to 1454)$
++ $78 \to 45360 \to 871 \to 45361 (\to 871)$
++ $540 \to 145 (\to 145)$
 
 从69开始可以产生一条有5个不重复元素的链，但是以一百万以下的数开始，能够产生的最长的不重复链包含60个项。
 
@@ -54,7 +54,7 @@ $$ 1! + 4! + 5! = 1 + 24 + 120 = 145 $$
 
 答案(answer): 402
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python

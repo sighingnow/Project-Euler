@@ -1,9 +1,5 @@
----
-title: Problem 49. Prime permutations
-author: He Tao
-date: 2015-02-19
-layout: post
----
+Problem 49. Prime permutations
+==================================
 
 ## 题目
 
@@ -27,11 +23,13 @@ What 12-digit number do you form by concatenating the three terms in this sequen
 
 ## 题解
 
-分析：枚举四位质数，然后再枚举差值。
-
 答案(answer): 296962999629
 
-+ Python
+### 分析
+
+枚举四位质数，然后再枚举差值。
+
+### Python
 
 ~~~python
 #! /usr/bin/env python

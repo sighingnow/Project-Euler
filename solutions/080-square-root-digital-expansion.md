@@ -28,11 +28,11 @@ decimal digits for all the irrational square roots.
 
 答案(answer): 40886
 
-+ 分析
+### 分析
 
 开平方算法。
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python

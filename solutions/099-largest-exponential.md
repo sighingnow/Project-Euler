@@ -1,16 +1,12 @@
----
-title: Problem 99. Largest exponential
-author: He Tao
-date: 2016-01-27
-layout: post
----
+Problem 99. Largest exponential
+==========================
 
 ## 题目
 
 Comparing two numbers written in index form like $2^11$ and $3^7$ is not difficult, as any calculator would confirm
-that $2^11 = 2048 < 3^7 = 2187$.
+that $2^{11} = 2048 < 3^{7} = 2187$.
 
-However, confirming that $632382^518061 > 519432^525806$ would be much more difficult, as both numbers contain over three
+However, confirming that $632382^{518061} > 519432^{525806}$ would be much more difficult, as both numbers contain over three
 million digits.
 
 Using [base_exp.txt](../resource/p099-base_exp.txt) (right click and 'Save Link/Target As...'), a 22K text file containing one
@@ -22,9 +18,9 @@ thousand lines with a base/exponent pair on each line, determine which line numb
 
 ## 翻译
 
-比较两个写成上标形式的数并不困难，比如$2^11$ 和 $3^7$，因为任何计算机都会告诉你$2^11 = 2048 < 3^7 = 2187$。
+比较两个写成上标形式的数并不困难，比如 $2^{11}$ 和 $3^{7}$，因为任何计算机都会告诉你 $2^{11} = 2048 < 3^{7} = 2187$。
 
-但是，要确实$632382^518061 > 519432^525806$ 就要困难很多，因为这两个数都包含超过三百万位数。
+但是，要确实 $632382^{518061} > 519432^{525806}$ 就要困难很多，因为这两个数都包含超过三百万位数。
 
 [base_exp.txt](../resource/p099-base_exp.txt) 包含一千行内容，每一行都包含一个基和一个指数，找出哪一行具有最大的值。
 
@@ -36,12 +32,12 @@ thousand lines with a base/exponent pair on each line, determine which line numb
 
 答案(answer): 709
 
-+ 分析
+### 分析
 
-Suppose $a^x \gt b^y$, then $\log{a^x} \gt \log{b^y}$, then $x \times \log{a} \gt y \times \log{b}$. Thus, we can reduce these
+Suppose $a^x > b^y$, then $\log{a^x} > \log{b^y}$, then $x \times \log{a} > y \times \log{b}$. Thus, we can reduce these
 exponents to a manageable size in this way.
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python

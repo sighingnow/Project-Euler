@@ -25,11 +25,11 @@ Given that the three characters are always asked for in order, analyse the file 
 
 答案(answer): 73162890
 
-+ 分析
+### 分析
 
 直接从密码为0开始枚举。
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python

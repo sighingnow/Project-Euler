@@ -1,9 +1,5 @@
----
-title: Problem 1. Multiples of 3 and 5
-author: He Tao
-date: 2015-01-01
-layout: post
----
+Problem 1. Multiples of 3 and 5
+==================================
 
 ## 题目
 
@@ -25,7 +21,7 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 
 答案(answer): 233168
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python
@@ -36,4 +32,17 @@ def euler_1():
 
 if __name__ == '__main__':
     print(euler_1())
+
+# vim: set sw=4, ts=4
+~~~
+
+### Haskell
+
+~~~Haskell
+main :: IO ()
+main = print euler_01
+
+euler_01 :: Int
+euler_01 = (sum . filter times) [0..1000-1]
+    where times n = rem n 3 == 0 || rem n 5 == 0
 ~~~

@@ -1,9 +1,5 @@
----
-title: Problem 35. Circular primes
-author: He Tao
-date: 2015-02-05
-layout: post
----
+Problem 35. Circular primes
+==================================
 
 ## 题目
 
@@ -29,7 +25,7 @@ How many circular primes are there below one million?
 
 答案(answer): 212
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python

@@ -1,9 +1,5 @@
----
-title: Problem 17. Number letter counts
-author: He Tao
-date: 2015-01-17
-layout: post
----
+Problem 17. Number letter counts
+==================================
 
 ## 题目
 
@@ -25,9 +21,11 @@ If all the numbers from 1 to 1000 (one thousand) inclusive were written out in w
 
 [题目17:用英文写出1到1000的所有数字需要多少个字母](http://pe.spiritzhang.com/index.php/2011-05-11-09-44-54/18-1711000 "题目17")
 
-## 题解(Python)
+## 题解
 
 答案(answer): 21124
+
+### 分析
 
 数字的规律
 
@@ -47,7 +45,7 @@ If all the numbers from 1 to 1000 (one thousand) inclusive were written out in w
 
 为整百时，会少一个and
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python

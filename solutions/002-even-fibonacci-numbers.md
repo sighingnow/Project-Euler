@@ -1,9 +1,5 @@
----
-title: Problem 2. Even Fibonacci numbers
-author: He Tao
-date: 2015-01-02
-layout: post
----
+Problem 2. Even Fibonacci numbers
+==================================
 
 ## 题目
 
@@ -29,7 +25,7 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 
 答案(answer): 4613732
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python
@@ -49,7 +45,7 @@ if __name__ == '__main__':
 # vim: set sw=4, ts=4
 ~~~
 
-+ Haskell
+### Haskell
 
 ~~~haskell
 main :: IO ()

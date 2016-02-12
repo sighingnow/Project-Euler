@@ -1,9 +1,5 @@
----
-title: Problem 98. Anagramic squares
-author: He Tao
-date: 2016-01-26
-layout: post
----
+Problem 98. Anagramic squares
+==========================
 
 ## 题目
 
@@ -37,12 +33,12 @@ What is the largest square number formed by any member of such a pair?
 
 答案(answer): 18769
 
-+ 分析
+### 分析
 
 首先，根据NOTE中的"All anagrams formed must be contained in the given text file."条件筛选出所有的anagramic pairs，
 然后，枚举每个字母的值，判断是否满足完全平方，找出数值最大值。
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python

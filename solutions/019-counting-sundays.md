@@ -1,9 +1,5 @@
----
-title: Problem 19. Counting Sundays
-author: He Tao
-date: 2015-01-19
-layout: post
----
+Problem 19. Counting Sundays
+==================================
 
 ## 题目
 
@@ -37,13 +33,15 @@ How many Sundays fell on the first of the month during the twentieth century (1 
 
 [题目19: 20世纪有多少个星期日是当月的第一天](http://pe.spiritzhang.com/index.php/2011-05-11-09-44-54/20-1920 "题目19")
 
-## 题解(Python)
+## 题解
 
-分析：使用蔡勒(Zeller)公式。
+答案(answer): 171
 
-公式内容:
+### 分析
 
-$$ w = (y+\lfloor{y/4}\rfloor+\lfloor{c/4}\rfloor-2c+\lfloor{26(m+1)/10}\rfloor+d-1)\ mod\ 7 $$
+使用蔡勒(Zeller)公式。公式内容:
+
+$$w = (y+\lfloor{\frac{y}{4}}\rfloor+\lfloor{\frac{c}{4}}\rfloor-2c+\lfloor{\frac{26(m+1)}{10}}\rfloor+d-1) \textit{ mod } 7$$
 
 参数含义解释：
 
@@ -52,9 +50,7 @@ $$ w = (y+\lfloor{y/4}\rfloor+\lfloor{c/4}\rfloor-2c+\lfloor{26(m+1)/10}\rfloor+
 + m: 月份；**注意**：月份的值在3-14之间，1月和2月应当作为上一年的13、14月来考虑。
 + d: 日。
 
-答案(answer): 171
-
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python

@@ -1,9 +1,5 @@
----
-title: Problem 18. Maximum path sum I
-author: He Tao
-date: 2015-01-18
-layout: post
----
+Problem 18. Maximum path sum I
+==================================
 
 ## 题目
 
@@ -53,7 +49,7 @@ Find the maximum total from top to bottom of the triangle below:
 8 5 9 3
 </pre></center>
 
-也就是 $$ 3 + 7 + 4 + 9 = 23.$$
+也就是 $$3 + 7 + 4 + 9 = 23.$$
 
 找出从以下三角形的顶端走到底端的最大总和：
 
@@ -77,15 +73,16 @@ Find the maximum total from top to bottom of the triangle below:
 
 [题目18:找出从三角形顶端走到底端的最大和](http://pe.spiritzhang.com/index.php/2011-05-11-09-44-54/19-18 "题目18")
 
-## 题解(Python)
-
-分析：树形DP
-
-状态转移方程:$$ dp[i] = max(dp[i-1][j-1], dp[i-1][j]) + number[i][j] $$
+## 题解
 
 答案(answer): 1074
 
-+ Python
+### 分析
+
+树形DP。状态转移方程：$$dp[i] = max(dp[i-1][j-1], dp[i-1][j]) + number[i][j]$$
+
+
+### Python
 
 ~~~python
 #! /usr/bin/env python

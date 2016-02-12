@@ -1,9 +1,5 @@
----
-title: Problem 12. Highly divisible triangular number
-author: He Tao
-date: 2015-01-12
-layout: post
----
+Problem 12. Highly divisible triangular number
+==================================
 
 ## 题目
 
@@ -13,7 +9,7 @@ $$1 + 2 + 3 + 4 + 5 + 6 + 7 = 28.$$
 
 The first ten terms would be:
 
-$$ 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, ...$$
+$$1, 3, 6, 10, 15, 21, 28, 36, 45, 55, \dots$$
 
 Let us list the factors of the first seven triangle numbers:
 
@@ -34,9 +30,8 @@ What is the value of the first triangle number to have over five hundred divisor
 [Problem 12. Highly divisible triangular number](https://projecteuler.net/problem=12 "Problem 12")
 
 ## 翻译
-三角形数序列是由对自然数的连加构造而成的。所以第七个三角形数是 $$ 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28.$$ 那么三角形数序列中的前十个是：
-
-$$ 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, ... $$
+三角形数序列是由对自然数的连加构造而成的。所以第七个三角形数是 $$1 + 2 + 3 + 4 + 5 + 6 + 7 = 28.$$
+那么三角形数序列中的前十个是：$$1, 3, 6, 10, 15, 21, 28, 36, 45, 55, \dots$$
 
 下面我们列出前七个三角形数的约数：
 
@@ -56,11 +51,11 @@ $$ 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, ... $$
 
 [题目12:第一个拥有超过500个约数的三角形数是多少](http://pe.spiritzhang.com/index.php/2011-05-11-09-44-54/13-12500 "题目12")
 
-## 题解(Python)
+## 题解
 
 答案(answer): 76576500
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python
@@ -97,13 +92,13 @@ if __name__ == '__main__':
 # vim: set sw=4, ts=4, fileencoding=utf-8
 ~~~
 
-+ Haskell
+### Haskell
 
 ~~~haskell
 import Data.List
 
 main :: IO ()
-main = print $ euler_12
+main = print euler_12
 
 euler_12 :: Int
 euler_12 = head $ filter ((> 500) . divisor) trianglenumbers where

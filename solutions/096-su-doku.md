@@ -1,9 +1,5 @@
----
-title: Problem 96. Su Doku
-author: He Tao
-date: 2016-01-26
-layout: post
----
+Problem 96. Su Doku
+==========================
 
 ## 题目
 
@@ -70,7 +66,7 @@ number found in the top left corner of the solution grid above.
 
 答案(answer): 24702
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python

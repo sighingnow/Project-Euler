@@ -1,9 +1,5 @@
----
-title: Problem 95. Amicable chains
-author: He Tao
-date: 2016-01-26
-layout: post
----
+Problem 95. Amicable chains
+==========================
 
 ## 题目
 
@@ -43,7 +39,7 @@ $$12496 \to 14288 \to 15472 \to 14536 \to 14264 (\to 12496 \to \dots)$$
 
 答案(answer): 14316
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python

@@ -1,9 +1,5 @@
----
-title: Problem 11. Largest product in a grid
-author: He Tao
-date: 2015-01-11
-layout: post
----
+Problem 11. Largest product in a grid
+==================================
 
 ## 题目
 
@@ -32,9 +28,9 @@ In the $20\times20$ grid below, four numbers along a diagonal line have been mar
 01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48
 </pre></center>
 
-The product of these numbers is $$ 26 \times 63 \times 78 \times 14 = 1788696. $$
+The product of these numbers is $$26 \times 63 \times 78 \times 14 = 1788696.$$
 
-What is the product of four adjacent numbers in the same direction (up, down, left, right, or diagonally) in the 20×20 grid?
+What is the product of four adjacent numbers in the same direction (up, down, left, right, or diagonally) in the $20 \times 20$ grid?
 
 
 [Problem 11. Summation of primes](https://projecteuler.net/problem=11 "Problem 11")
@@ -64,16 +60,17 @@ What is the product of four adjacent numbers in the same direction (up, down, le
 20 73 35 29 78 31 90 01 74 31 49 71 48 86 81 16 23 57 05 54
 01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48
 </pre></center>
-这四个数字的乘积是：$$ 26 \times 63 \times 78 \times 14 = 1788696. $$
-在这个 $20\times20$ 网格中，处于任何方向上（上，下，左，右或者对角线）的四个相邻数字的乘积的最大值是多少？
 
-[题目11:在$20\times20$的网格中同一直线上四个数的最大乘积是多少](http://pe.spiritzhang.com/index.php/2011-05-11-09-44-54/12-1120t20 "题目11")
+这四个数字的乘积是：$$26 \times 63 \times 78 \times 14 = 1788696.$$
+在这个 $20 \times 20$ 网格中，处于任何方向上（上，下，左，右或者对角线）的四个相邻数字的乘积的最大值是多少？
 
-## 题解(Python)
+[题目11:在 $20 \times 20$ 的网格中同一直线上四个数的最大乘积是多少](http://pe.spiritzhang.com/index.php/2011-05-11-09-44-54/12-1120t20 "题目11")
+
+## 题解
 
 答案(answer): 70600674
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python

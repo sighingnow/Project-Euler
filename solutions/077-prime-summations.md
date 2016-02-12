@@ -33,7 +33,7 @@ What is the first value which can be written as the sum of primes in over five t
 
 答案(answer): 71
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python
@@ -81,7 +81,7 @@ if __name__ == '__main__':
 # vim: set sw=4, ts=4
 ~~~
 
-+ Haskell
+### Haskell
 
 ~~~haskell
 main :: IO ()

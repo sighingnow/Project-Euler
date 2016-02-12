@@ -1,9 +1,5 @@
----
-title: Problem 34. Digit factorials
-author: He Tao
-date: 2015-02-04
-layout: post
----
+Problem 34. Digit factorials
+==================================
 
 ## 题目
 
@@ -27,11 +23,13 @@ Note: as 1! = 1 and 2! = 2 are not sums they are not included.
 
 ## 题解
 
-不难分析出一个上界为 2540160，再枚举判断即可。
-
 答案(answer): 40730
 
-+ Python
+### 分析
+
+不难计算出一个上界为 2540160，再枚举判断即可。
+
+### Python
 
 ~~~python
 #! /usr/bin/env python

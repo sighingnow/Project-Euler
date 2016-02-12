@@ -1,21 +1,17 @@
----
-title: Problem 9. Special Pythagorean triplet
-author: He Tao
-date: 2015-01-09
-layout: post
----
+Problem 9. Special Pythagorean triplet
+==================================
 
 ## 题目
 
-A Pythagorean triplet is a set of three natural numbers, $ a < b < c $, for which,
+A Pythagorean triplet is a set of three natural numbers, $a < b < c$, for which,
 
 $$a^2 + b^2 = c^2$$
 
 For example,
 
-$$32 + 42 = 9 + 16 = 25 = 52.$$
+$$3^2 + 4^2 = 9 + 16 = 25 = 5^2.$$
 
-There exists exactly one Pythagorean triplet for which $ a + b + c = 1000. $
+There exists exactly one Pythagorean triplet for which $a + b + c = 1000.$
 
 Find the product abc.
 
@@ -23,30 +19,34 @@ Find the product abc.
 
 ## 翻译
 
-一个毕达哥拉斯三元组是一个包含三个自然数的集合，$ a < b < c $，满足条件：
+一个毕达哥拉斯三元组是一个包含三个自然数的集合，$a < b < c$，满足条件：
 
-$$ a^2 + b^2 = c^2 $$
+$$a^2 + b^2 = c^2$$
 
 例如：
 
-$$ 32 + 42 = 9 + 16 = 25 = 52. $$
+$$3^2 + 4^2 = 9 + 16 = 25 = 5^2.$$
 
-已知存在并且只存在一个毕达哥拉斯三元组满足条件 $ a + b + c = 1000. $
+已知存在并且只存在一个毕达哥拉斯三元组满足条件 $a + b + c = 1000.$
 
 找出该三元组中abc的乘积。
 
-[题目9：找出唯一的满足 $ a + b + c = 1000 $ 的毕达哥拉斯三元组{a, b, c}](http://pe.spiritzhang.com/index.php/2011-05-11-09-44-54/10-9a--b--c--1000a-b-c "题目9")
+[题目9：找出唯一的满足 $a + b + c = 1000$ 的毕达哥拉斯三元组 $\{a, b, c\}$](http://pe.spiritzhang.com/index.php/2011-05-11-09-44-54/10-9a--b--c--1000a-b-c "题目9")
 
-## 题解(Python)
+## 题解
 
 答案(answer): 31875000
 
-+ 分析
+### 分析
 
-    1. 枚举a,b,c的值，判断是否满足条件$a^2+b^2=c^2$。
-    2. 通过 Euclid'c formula 生成勾股数。
+本题有以下两种解法：
 
-+ Python
+1. 枚举a,b,c的值，判断是否满足条件 $a^2+b^2=c^2$。
+2. 通过 Euclid'c formula 生成勾股数。
+
+解法2效率更高。
+
+### Python
 
 ~~~python
 #! /usr/bin/env python

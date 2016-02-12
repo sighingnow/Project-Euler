@@ -37,7 +37,7 @@ Find the least value of n for which p(n) is divisible by one million.
 
 答案(answer): 55374
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python

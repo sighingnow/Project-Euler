@@ -1,9 +1,5 @@
----
-title: Problem 37. Truncatable primes
-author: He Tao
-date: 2015-02-07
-layout: post
----
+Problem 37. Truncatable primes
+==================================
 
 ## 题目
 
@@ -29,7 +25,7 @@ NOTE: 2, 3, 5, and 7 are not considered to be truncatable primes.
 
 答案(answer): 748317
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python

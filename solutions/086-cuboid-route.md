@@ -34,11 +34,11 @@ Find the least value of M such that the number of solutions first exceeds one mi
 
 答案(answer): 1818
 
-+ 分析
+### 分析
 
 枚举M，令最长边的长度为 M，再枚举另外两条边的长度之和。
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python

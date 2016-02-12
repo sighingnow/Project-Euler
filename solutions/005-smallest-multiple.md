@@ -1,9 +1,5 @@
----
-title: Problem 5. Smallest multiple
-author: He Tao
-date: 2015-01-05
-layout: post
----
+Problem 5. Smallest multiple
+==================================
 
 ## 题目
 
@@ -21,11 +17,11 @@ What is the smallest positive number that is evenly divisible by all of the numb
 
 [题目5：找出最小的能被1-20中每个数整除的数](http://pe.spiritzhang.com/index.php/2011-05-11-09-44-54/6-51-20 "题目5")
 
-## 题解(Python)
+## 题解
 
 答案(answer): 232792560
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python

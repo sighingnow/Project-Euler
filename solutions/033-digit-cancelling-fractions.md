@@ -1,9 +1,5 @@
----
-title: Problem 33. Digit cancelling fractions
-author: He Tao
-date: 2015-02-03
-layout: post
----
+Problem 33. Digit cancelling fractions
+==================================
 
 ## 题目
 

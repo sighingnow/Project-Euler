@@ -1,9 +1,5 @@
----
-title: Problem 3. Largest prime factor
-author: He Tao
-date: 2015-01-03
-layout: post
----
+Problem 3. Largest prime factor
+==================================
 
 ## 题目
 
@@ -21,11 +17,11 @@ What is the largest prime factor of the number 600851475143 ?
 
 [题目3：找出一个合数的最大质数因子](http://pe.spiritzhang.com/index.php/2011-05-11-09-44-54/4-3 "题目3")
 
-## 题解(Python)
+## 题解
 
 答案(answer): 6857
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python
@@ -45,13 +41,13 @@ if __name__ == '__main__':
 # vim: set sw=4, ts=4
 ~~~
 
-+ Haskell
+### Haskell
 
 ~~~haskell
 import Data.List
 
 main :: IO ()
-main = print $ euler_3
+main = print euler_3
 
 euler_3 :: Int
 euler_3 = last $ primefactors 600851475143

@@ -1,9 +1,5 @@
----
-title: Problem 4. Largest palindrome product
-author: He Tao
-date: 2015-01-04
-layout: post
----
+Problem 4. Largest palindrome product
+==================================
 
 ## 题目
 
@@ -21,11 +17,11 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 
 [题目4：找出由两个三位数乘积构成的回文](http://pe.spiritzhang.com/index.php/2011-05-11-09-44-54/5-4 "题目4")
 
-## 题解(Python)
+## 题解
 
 答案(answer): 906609
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python

@@ -1,9 +1,5 @@
----
-title: Problem 32. Pandigital products
-author: He Tao
-date: 2015-02-02
-layout: post
----
+Problem 32. Pandigital products
+==================================
 
 ## 题目
 
@@ -33,7 +29,7 @@ Find the sum of all products whose multiplicand/multiplier/product identity can 
 
 答案(answer): 45228
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python

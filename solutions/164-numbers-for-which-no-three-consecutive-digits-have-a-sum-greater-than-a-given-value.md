@@ -1,27 +1,23 @@
----
-title: Problem 164. Numbers for which no three consecutive digits have a sum greater than a given value
-author: He Tao
-date: 2015-02-20
-layout: post
----
+Problem 164. Numbers for which no three consecutive digits have a sum greater than a given value
+==============================================================================================
 
 ## 题目
 
-How many 20 digit numbers n (without any leading zero) exist such that no three consecutive digits of n have a sum greater than 9?
+How many $20$ digit numbers $n$ (without any leading zero) exist such that no three consecutive digits of n have a sum greater than $9$?
 
 [Problem 164. Eight Divisors](https://projecteuler.net/problem=164 "Problem 164")
 
 ## 翻译
 
-请问，存在多少个位数为20（没有前导0）,并且任意三个相邻数位之和不超过9的数字？
+请问，存在多少个位数为 $20$（没有前导 $0$）,并且任意三个相邻数位之和不超过 $9$ 的数字？
 
-[题目164：任意三个相邻数字位之和不超过给定值的数‏字。](http://pe.spiritzhang.com/index.php/2011-05-11-09-44-54/167-164 "题目164")
+[题目164：任意三个相邻数字位之和不超过给定值的数字。](http://pe.spiritzhang.com/index.php/2011-05-11-09-44-54/167-164 "题目164")
 
 ## 题解
 
 答案(answer): 378158756814587
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python
@@ -47,11 +43,11 @@ if __name__ == '__main__':
 # vim: set sw=4, ts=4
 ~~~
 
-+ Haskell
+### Haskell
 
 ~~~haskell
 main :: IO ()
-main = print $ euler_164
+main = print euler_164
 
 euler_164 :: Integer
 euler_164 = sum [dp !! a !! b | a <- [1..9], b <- [0..9-a]] where

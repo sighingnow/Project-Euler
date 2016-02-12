@@ -1,9 +1,5 @@
----
-title: Problem 23. Non-abundant sums
-author: He Tao
-date: 2015-01-23
-layout: post
----
+Problem 23. Non-abundant sums
+==================================
 
 ## 题目
 
@@ -33,7 +29,7 @@ Find the sum of all the positive integers which cannot be written as the sum of 
 
 答案(answer): 4179871
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python
@@ -45,7 +41,7 @@ def euler_23():
     flag = [False for i in range(0, bound+1)]
     number = []
 
-    def calNum(n):
+    def cal_num(n):
         adds = 0
         for i in range(1, n):
             if n % i == 0:
@@ -54,7 +50,7 @@ def euler_23():
             number.append(n)
 
     for i in range(2, bound+1):
-        calNum(i)
+        cal_num(i)
     for i in number:
         for j in number:
             try:

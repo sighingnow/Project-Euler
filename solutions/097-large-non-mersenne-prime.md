@@ -1,16 +1,12 @@
----
-title: Problem 97. Large non-Mersenne prime
-author: He Tao
-date: 2016-01-26
-layout: post
----
+Problem 97. Large non-Mersenne prime
+==========================
 
 ## 题目
 
-The first known prime found to exceed one million digits was discovered in 1999, and is a Mersenne prime of the form $2^6972593−1$;
-it contains exactly 2,098,960 digits. Subsequently other Mersenne primes, of the form $2^p−1$, have been found which contain more digits.
+The first known prime found to exceed one million digits was discovered in 1999, and is a Mersenne prime of the form $2^{6972593}-1$;
+it contains exactly 2,098,960 digits. Subsequently other Mersenne primes, of the form $2^p-1$, have been found which contain more digits.
 
-However, in 2004 there was found a massive non-Mersenne prime which contains 2,357,207 digits: $28433 \times 2^7830457 + 1$.
+However, in 2004 there was found a massive non-Mersenne prime which contains 2,357,207 digits: $28433 \times 2^{7830457} + 1$.
 
 Find the last ten digits of this prime number.
 
@@ -18,9 +14,9 @@ Find the last ten digits of this prime number.
 
 ## 翻译
 
-第一个超过一百万位的素数是在1999年发现的，并且是一个梅森素数：$2^6972593−1$；它包含2,098,960位。之后包含更多位的，形如 $2^p−1$ 的梅森素数被陆续发现。
+第一个超过一百万位的素数是在1999年发现的，并且是一个梅森素数：$2^{6972593}-1$；它包含2,098,960位。之后包含更多位的，形如 $2^p-1$ 的梅森素数被陆续发现。
 
-但是在2004年人们发现了一个巨大的包含2,357,207 位的非梅森素数：$28433 \times 2^7830457 + 1$。
+但是在2004年人们发现了一个巨大的包含2,357,207 位的非梅森素数：$28433 \times 2^{7830457} + 1$。
 
 找出这个素数的随后十位。
 
@@ -30,11 +26,11 @@ Find the last ten digits of this prime number.
 
 答案(answer): 8739992577
 
-+ 分析
+### 分析
 
 快速幂模。
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python
@@ -58,7 +54,7 @@ if __name__ == '__main__':
 # vim: set sw=4, ts=4
 ~~~
 
-+ Haskell
+### Haskell
 
 ~~~haskell
 main :: IO ()

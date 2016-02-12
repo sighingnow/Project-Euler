@@ -1,23 +1,19 @@
----
-title: Problem 42. Coded triangle numbers
-author: He Tao
-date: 2015-02-12
-layout: post
----
+Problem 42. Coded triangle numbers
+==================================
 
 ## 题目
 
-The $n_th$ term of the sequence of triangle numbers is given by,
+The $n_{th}$ term of the sequence of triangle numbers is given by,
 
-$$ tn = \frac{n(n+1)}{2} $$
+$$t_n = \frac{n(n+1)}{2}$$
 
 so the first ten triangle numbers are:
 
-$$ 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, \dots $$
+$$1, 3, 6, 10, 15, 21, 28, 36, 45, 55, \dots$$
 
 By converting each letter in a word to a number corresponding to its alphabetical position and adding these values we form a word value. For example, the word value for SKY is
 
-$$ 19 + 11 + 25 = 55 = t10 $$
+$$19 + 11 + 25 = 55 = t_{10}$$
 
 If the word value is a triangle number then we shall call the word a triangle word.
 
@@ -27,17 +23,17 @@ Using [words.txt](../resource/p042-words.txt) (right click and 'Save Link/Target
 
 ## 翻译
 
-三角形数序列中第 n 项的定义是：
+三角形数序列中第 $n$ 项的定义是：
 
-$$ tn = \frac{n(n+1)}{2} $$
+$$t_n = \frac{n(n+1)}{2}$$
 
 因此前十个三角形数是:
 
-$$ 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, \dots $$
+$$1, 3, 6, 10, 15, 21, 28, 36, 45, 55, \dots$$
 
 通过将一个单词中每个字母在字母表中的位置值加起来，我们可以将一个单词转换为一个数。例如，单词SKY的值为
 
-$$ 19 + 11 + 25 = 55 = t10 $$
+$$19 + 11 + 25 = 55 = t_{10}$$
 
 如果单词的值是一个三角形数，我们称这个单词为三角形单词。
 
@@ -49,7 +45,7 @@ $$ 19 + 11 + 25 = 55 = t10 $$
 
 答案(answer): 162
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python

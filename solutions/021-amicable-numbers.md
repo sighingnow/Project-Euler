@@ -1,9 +1,5 @@
----
-title: Problem 21. Amicable numbers
-author: He Tao
-date: 2015-01-21
-layout: post
----
+Problem 21. Amicable numbers
+==================================
 
 ## 题目
 
@@ -32,7 +28,7 @@ d(n)定义为n 的所有真因子（小于 n 且能整除 n 的整数）之和�
 
 答案(answer): 31626
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python

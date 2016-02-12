@@ -1,9 +1,5 @@
----
-title: Problem 13. Large sum
-author: He Tao
-date: 2015-01-13
-layout: post
----
+Problem 13. Large sum
+==================================
 
 ## 题目
 
@@ -221,11 +217,11 @@ Work out the first ten digits of the sum of the following one-hundred 50-digit n
 
 [题目13:找出100个50位数之和的前十位数字](http://pe.spiritzhang.com/index.php/2011-05-11-09-44-54/14-1310050 "题目13")
 
-## 题解(Python)
+## 题解
 
 答案(answer): 5537376230
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python

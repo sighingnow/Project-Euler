@@ -58,7 +58,7 @@ How many distinct arrangements of the two cubes allow for all of the square numb
 
 答案(answer): 1217
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python

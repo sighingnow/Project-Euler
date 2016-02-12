@@ -1,32 +1,28 @@
----
-title: Problem 48. Self powers
-author: He Tao
-date: 2015-02-18
-layout: post
----
+Problem 48. Self powers
+==================================
 
 ## 题目
 
-The series, $$ 1^1 + 2^2 + 3^3 + ... + 10^10 = 10405071317 $$
+The series, $$1^1 + 2^2 + 3^3 + ... + 10^{10} = 10405071317$$
 
-Find the last ten digits of the series, $$ 1^1 + 2^2 + 3^3 + ... + 1000^1000 $$
+Find the last ten digits of the series, $$1^1 + 2^2 + 3^3 + ... + 1000^{1000}$$
 
 [Problem 48. Self powers](https://projecteuler.net/problem=48 "Problem 48")
 
 
 ## 翻译
 
-$$ 1^1 + 2^2 + 3^3 + ... + 10^10 = 10405071317 $$
+$$1^1 + 2^2 + 3^3 + ... + 10^{10} = 10405071317$$
 
-$$ 1^1 + 2^2 + 3^3 + ... + 1000^1000的最后十位是什么 $$
+$$1^1 + 2^2 + 3^3 + ... + 1000^{1000}$$ 的最后十位是什么
 
-[题目48：找出1^1 + 2^2 + ... + 1000^1000的最后十位。](http://pe.spiritzhang.com/index.php/2011-05-11-09-44-54/49-4811--22----10001000 "题目48")
+[题目48：找出 $1^1 + 2^2 + ... + 1000^{1000}$ 的最后十位。](http://pe.spiritzhang.com/index.php/2011-05-11-09-44-54/49-4811--22----10001000 "题目48")
 
 ## 题解
 
 答案(answer): 9110846700
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python

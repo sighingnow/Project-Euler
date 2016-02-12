@@ -6,13 +6,13 @@ Problem 83. Path sum: four ways
 In the 5 by 5 matrix below, the minimal path sum from the top left to the bottom right, by moving
 left, right, up, and down, is indicated in bold red and is equal to 2297.
 
-$$ \begin{pmatrix}
+$$\begin{pmatrix}
 \color{red}{131} & 673 & 234 & 103 & 18\\
 \color{red}{201} & \color{red}{96} & \color{red}{342} & 965 & 150\\
 630 & 803 & \color{red}{746} & \color{red}{422} & 111\\
 537 & 699 & 497 & \color{red}{121} & 956\\
 805 & 732 & 524 & \color{red}{37} & \color{red}{331}
-\end{pmatrix} $$
+\end{pmatrix}$$
 
 Find the minimal path sum, in [matrix.txt](../resource/p083-matrix.txt) (right click and "Save Link/Target As..."), a 31K text file containing a 80 by 80 matrix, from the top left to the bottom right by moving
 left, right, up, and down.
@@ -21,10 +21,10 @@ left, right, up, and down.
 
 ## 翻译
 
-在以下这个$5 \times 5$的矩阵中，在允许向上，下，左，右移动的情况下，从左上角到右下角的最小路径和是2297。路径用
+在以下这个 $5 \times 5$ 的矩阵中，在允许向上，下，左，右移动的情况下，从左上角到右下角的最小路径和是2297。路径用
 红色标出。
 
-$$ \begin{pmatrix}
+$$\begin{pmatrix}
 \color{red}{131} & 673 & 234 & 103 & 18\\
 \color{red}{201} & \color{red}{96} & \color{red}{342} & 965 & 150\\
 630 & 803 & \color{red}{746} & \color{red}{422} & 111\\
@@ -32,14 +32,14 @@ $$ \begin{pmatrix}
 805 & 732 & 524 & \color{red}{37} & \color{red}{331}
 \end{pmatrix} $$
 
-[matrix.txt](../resource/p083-matrix.txt) 包含一个$80 \times 80$的矩阵，在允许向上，下，左，右移动的情况
+[matrix.txt](../resource/p083-matrix.txt) 包含一个 $80 \times 80$ 的矩阵，在允许向上，下，左，右移动的情况
 下，找出从左上角到右下角的最小路径和。
 
 ## 题解
 
 答案(answer): 425185
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python

@@ -21,7 +21,7 @@ Although there exists no rectangular grid that contains exactly two million rect
 
 答案(answer): 2772
 
-+ 分析
+### 分析
 
 若边长为$m$,$n$，包含的矩形个数为：$$\frac{m (m+1) n (n+1)}{4}$$
 
@@ -29,7 +29,7 @@ Although there exists no rectangular grid that contains exactly two million rect
 然后求较长边的lower bound: $$\sqrt{\sqrt{2000000 \times 4}} \approx 53$$
 然后枚举。
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python

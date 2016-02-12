@@ -32,7 +32,7 @@ How many numbers below fifty million can be expressed as the sum of a prime squa
 
 答案(answer): 1097343
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python

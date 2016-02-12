@@ -1,21 +1,17 @@
----
-title: Problem 30. Digit fifth powers
-author: He Tao
-date: 2015-01-30
-layout: post
----
+Problem 30. Digit fifth powers
+==================================
 
 ## 题目
 
 Surprisingly there are only three numbers that can be written as the sum of fourth powers of their digits:
 
-$$ 1634 = 1^4 + 6^4 + 3^4 + 4^4 $$
-$$ 8208 = 8^4 + 2^4 + 0^4 + 8^4 $$
-$$ 9474 = 9^4 + 4^4 + 7^4 + 4^4 $$
++ $1634 = 1^4 + 6^4 + 3^4 + 4^4$
++ $8208 = 8^4 + 2^4 + 0^4 + 8^4$
++ $9474 = 9^4 + 4^4 + 7^4 + 4^4$
 
 As $1 = 1^4$ is not a sum it is not included.
 
-The sum of these numbers is 1634 + 8208 + 9474 = 19316.
+The sum of these numbers is $$1634 + 8208 + 9474 = 19316.$$
 
 Find the sum of all the numbers that can be written as the sum of fifth powers of their digits.
 
@@ -25,13 +21,13 @@ Find the sum of all the numbers that can be written as the sum of fifth powers o
 
 令人惊奇的，只有三个数能够写成它们各位数的四次方之和：
 
-$$ 1634 = 1^4 + 6^4 + 3^4 + 4^4 $$
-$$ 8208 = 8^4 + 2^4 + 0^4 + 8^4 $$
-$$ 9474 = 9^4 + 4^4 + 7^4 + 4^4 $$
++ $1634 = 1^4 + 6^4 + 3^4 + 4^4$
++ $8208 = 8^4 + 2^4 + 0^4 + 8^4$
++ $9474 = 9^4 + 4^4 + 7^4 + 4^4$
 
-$1 = 1^4$没有被算作在内因为它不是一个和。
+$1 = 1^4$ 没有被算作在内因为它不是一个和。
 
-这些数字的和是 1634 + 8208 + 9474 = 19316.
+这些数字的和是 $$1634 + 8208 + 9474 = 19316.$$
 
 找出所有能被写成各位数字五次方之和的数之和。
 
@@ -39,11 +35,13 @@ $1 = 1^4$没有被算作在内因为它不是一个和。
 
 ## 题解
 
-分析：$7 \times 9^5$ = 413343, 因此，最多为一个六位数
-
 答案(answer): 443839
 
-+ Python
+### 分析
+
+$7 \times 9^5$= 413343, 因此，最多为一个六位数
+
+### Python
 
 ~~~python
 #! /usr/bin/env python

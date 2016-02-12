@@ -1,9 +1,5 @@
----
-title: Problem 22. Names scores
-author: He Tao
-date: 2015-01-22
-layout: post
----
+Problem 22. Names scores
+==================================
 
 ## 题目
 
@@ -29,7 +25,7 @@ What is the total of all the name scores in the file?
 
 答案(answer): 871198282
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python

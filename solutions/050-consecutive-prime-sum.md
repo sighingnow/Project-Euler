@@ -1,14 +1,10 @@
----
-title: Problem 50. Consecutive prime sum
-author: He Tao
-date: 2015-02-20
-layout: post
----
+Problem 50. Consecutive prime sum
+==================================
 
 ## 题目
 
 The prime 41, can be written as the sum of six consecutive primes:
-$$ 41 = 2 + 3 + 5 + 7 + 11 + 13 $$
+$$41 = 2 + 3 + 5 + 7 + 11 + 13$$
 This is the longest sum of consecutive primes that adds to a prime below one-hundred.
 
 The longest sum of consecutive primes below one-thousand that adds to a prime, contains 21 terms, and is equal to 953.
@@ -21,7 +17,7 @@ Which prime, below one-million, can be written as the sum of the most consecutiv
 ## 翻译
 
 41这个质数，可以写作6个连续质数之和：
-$$ 41 = 2 + 3 + 5 + 7 + 11 + 13 $$
+$$41 = 2 + 3 + 5 + 7 + 11 + 13$$
 这是100以下的最长的和为质数的连续质数序列。
 
 1000以下最长的和为质数的连续质数序列包含21个项，和为953.
@@ -34,11 +30,13 @@ $$ 41 = 2 + 3 + 5 + 7 + 11 + 13 $$
 
 ## 题解
 
-分析：枚举连续质数的和，然后判断和是为质数。估计范围，剪枝。
-
 答案(answer): 997651
 
-+ Python
+### 分析
+
+枚举连续质数的和，然后判断和是为质数。估计范围，剪枝。
+
+### Python
 
 ~~~python
 #! /usr/bin/env python

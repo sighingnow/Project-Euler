@@ -1,9 +1,5 @@
----
-title: Problem 26. Reciprocal cycles
-author: He Tao
-date: 2015-01-26
-layout: post
----
+Problem 26. Reciprocal cycles
+=============================
 
 ## 题目
 
@@ -23,7 +19,7 @@ A unit fraction contains 1 in the numerator. The decimal representation of the u
 
 Where 0.1(6) means 0.166666..., and has a 1-digit recurring cycle. It can be seen that 1/7 has a 6-digit recurring cycle.
 
-Find the value of $ d < 1000 $ for which $\frac{1}{d}$ contains the longest recurring cycle in its decimal fraction part.
+Find the value of $d < 1000$ for which $\frac{1}{d}$ contains the longest recurring cycle in its decimal fraction part.
 
 [Problem 26. Reciprocal cycles](https://projecteuler.net/problem=26 "Problem 26")
 
@@ -46,15 +42,17 @@ Find the value of $ d < 1000 $ for which $\frac{1}{d}$ contains the longest recu
 
 找出小于1000的数字d，$\frac{1}{d}$ 的十进制表示含有最长的循环圈。
 
-[题目26：找出小于1000的数字中令$\frac{1}{d}$拥有最长循环圈的数字d](http://pe.spiritzhang.com/index.php/2011-05-11-09-44-54/27-2610001dd "题目26")
+[题目26：找出小于1000的数字中令 $\frac{1}{d}$ 拥有最长循环圈的数字d](http://pe.spiritzhang.com/index.php/2011-05-11-09-44-54/27-2610001dd "题目26")
 
 ## 题解
 
-分析：模拟除法的笔算过程，当某个被除数值出现两次是，即找到最长循环节的长度。
-
 答案(answer): 983
 
-+ Python
+### 分析
+
+模拟除法的笔算过程，当某个被除数值出现两次是，即找到最长循环节的长度。
+
+### Python
 
 ~~~python
 #! /usr/bin/env python

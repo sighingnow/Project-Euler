@@ -1,9 +1,5 @@
----
-title: Problem 39. Integer right triangles
-author: He Tao
-date: 2015-02-09
-layout: post
----
+Problem 39. Integer right triangles
+==================================
 
 ## 题目
 
@@ -29,7 +25,7 @@ For which value of p ≤ 1000, is the number of solutions maximised?
 
 答案(answer): 840
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python

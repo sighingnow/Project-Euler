@@ -7,8 +7,8 @@ A number chain is created by continuously adding the square of the digits in a n
 
 For example,
 
-$$ 44 \to 32 \to 13 \to 10 \to 1 \to 1 $$
-$$ 85 \to 89 \to 145 \to 42 \to 20 \to 4 \to 16 \to 37 \to 58 \to 89 $$
+$$44 \to 32 \to 13 \to 10 \to 1 \to 1$$
+$$85 \to 89 \to 145 \to 42 \to 20 \to 4 \to 16 \to 37 \to 58 \to 89$$
 
 Therefore any chain that arrives at 1 or 89 will become stuck in an endless loop. What is most amazing is that EVERY starting number will eventually arrive at 1 or 89.
 
@@ -22,8 +22,8 @@ How many starting numbers below ten million will arrive at 89?
 
 例如：
 
-$$ 44 \to 32 \to 13 \to 10 \to 1 \to 1 $$
-$$ 85 \to 89 \to 145 \to 42 \to 20 \to 4 \to 16 \to 37 \to 58 \to 89 $$
+$$44 \to 32 \to 13 \to 10 \to 1 \to 1$$
+$$85 \to 89 \to 145 \to 42 \to 20 \to 4 \to 16 \to 37 \to 58 \to 89$$
 
 因此任何到达1或89的数字链都会陷入无限循环。令人惊奇的是，以任何数字开始，最终都会到达1或89。
 
@@ -35,7 +35,7 @@ $$ 85 \to 89 \to 145 \to 42 \to 20 \to 4 \to 16 \to 37 \to 58 \to 89 $$
 
 答案(answer): 8581146
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python

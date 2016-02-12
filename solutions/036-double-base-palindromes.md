@@ -1,13 +1,9 @@
----
-title: Problem 36. Double-base palindromes
-author: He Tao
-date: 2015-02-06
-layout: post
----
+Problem 36. Double-base palindromes
+==================================
 
 ## 题目
 
-The decimal number, $585 = {1001001001}_{2}$(binary), is palindromic in both bases.
+The decimal number, $585 = {1001001001}_{2}$ (binary), is palindromic in both bases.
 
 Find the sum of all numbers, less than one million, which are palindromic in base 10 and base 2.
 
@@ -31,7 +27,7 @@ Find the sum of all numbers, less than one million, which are palindromic in bas
 
 答案(answer): 872187
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python

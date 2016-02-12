@@ -1,20 +1,16 @@
----
-title: Problem 14. Longest Collatz sequence
-author: He Tao
-date: 2015-01-14
-layout: post
----
+Problem 14. Longest Collatz sequence
+==================================
 
 ## 题目
 
 The following iterative sequence is defined for the set of positive integers:
 
-$$n \to n/2 \text{ (n is even) } $$
-$$n \to 3n + 1 \text{ (n is odd) } $$
+$$n \to n/2 \text{ (n is even) }$$
+$$n \to 3n + 1 \text{ (n is odd) }$$
 
 Using the rule above and starting with 13, we generate the following sequence:
 
-$$13 \to 40 \to 20 \to 10 \to 5 \to 16 \to 8 \to 4 \to 2 \to 1 $$
+$$13 \to 40 \to 20 \to 10 \to 5 \to 16 \to 8 \to 4 \to 2 \to 1$$
 
 It can be seen that this sequence (starting at 13 and finishing at 1) contains 10 terms. Although it has not been proved yet (Collatz Problem), it is thought that all starting numbers finish at 1.
 
@@ -28,12 +24,12 @@ Which starting number, under one million, produces the longest chain?
 
 以下迭代序列定义在整数集合上：
 
-$$n \to n/2 \text{ (当n是偶数时) } $$
-$$n \to 3n + 1 \text{ (当n是奇数时) } $$
+$$n \to n/2 \text{ (n is even) }$$
+$$n \to 3n + 1 \text{ (n is odd) }$$
 
 应用以上规则，并且以数字13开始，我们得到以下序列：
 
-$$ 13 \to 40 \to 20 \to 10 \to 5 \to 16 \to 8 \to 4 \to 2 \to 1 $$
+$$13 \to 40 \to 20 \to 10 \to 5 \to 16 \to 8 \to 4 \to 2 \to 1$$
 
 可以看出这个以13开始以1结束的序列包含10个项。虽然还没有被证明（Collatz问题），但是人们认为在这个规则下，以任何数字开始都会以1结束。
 
@@ -43,11 +39,11 @@ $$ 13 \to 40 \to 20 \to 10 \to 5 \to 16 \to 8 \to 4 \to 2 \to 1 $$
 
 [题目14:找出以100万以下的数字开始的最长序列](http://pe.spiritzhang.com/index.php/2011-05-11-09-44-54/15-14100 "题目14")
 
-## 题解(Python)
+## 题解
 
 答案(answer): 837799
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python

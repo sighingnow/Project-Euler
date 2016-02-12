@@ -1,9 +1,5 @@
----
-title: Problem 41. Pandigital prime
-author: He Tao
-date: 2015-02-11
-layout: post
----
+Problem 41. Pandigital prime
+==================================
 
 ## 题目
 
@@ -23,7 +19,9 @@ What is the largest _n-digit_ pandigital prime that exists?
 
 ## 题解
 
-分析：
+答案(answer): 7652413
+
+### 分析
 
 观察累加和的特点：
 
@@ -41,9 +39,7 @@ What is the largest _n-digit_ pandigital prime that exists?
 
 猜测n的值为7（判断累加和能否被3整除）,开始枚举7位数的全排列。同时，因为要找最大的，所以从大往小找。
 
-答案(answer): 7652413
-
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python

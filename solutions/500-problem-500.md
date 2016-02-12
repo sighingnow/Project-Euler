@@ -1,9 +1,5 @@
----
-title: Problem 500. Problem 500!!!
-author: He Tao
-date: 2015-02-20
-layout: post
----
+Problem 500. Problem 500!!!
+============================
 
 ## 题目
 
@@ -11,7 +7,7 @@ The number of divisors of 120 is 16.
 
 In fact 120 is the smallest number having 16 divisors.
 
-Find the smallest number with $2^500500$ divisors.
+Find the smallest number with $2^{500500}$ divisors.
 
 Give your answer modulo 500500507.
 
@@ -22,7 +18,7 @@ Give your answer modulo 500500507.
 
 答案(answer): 35407281
 
-+ 分析
+### 分析
 
 引自[https://news.ycombinator.com/item?id=8977550](https://news.ycombinator.com/item?id=8977550)的关于此题的解答：
 
@@ -31,19 +27,19 @@ Give your answer modulo 500500507.
 >   <2>. Multiply by an existing prime k + 1 times, where k is the number of times it has been used.
 > We repeat this 500500 times, using rule <1> and <2> (which can be generalized to one rule) and the result is the final answer.
 
-| factor count | n                         |
-|:------------:|---------------------------|
-|  2           | 2                         |
-|  4           | 2*3 <1>                   |
-|  8           | 2*3*2*2 <2>               |
-|  16          | 2*3*2*2*5 <1>             |
-|  32          | 2*3*2*2*5*7 <1>           |
-|  64          | 2*3*2*2*5*7*3*3 <2>       |
-|  128         | 2*3*2*2*5*7*3*3*11 <1>    |
+| factor count   | n                           |
+|:--------------:|:---------------------------:|
+|  $2$           | $2$                         |
+|  $4$           | $2*3$ <1>                   |
+|  $8$           | $2*3*2*2$ <2>               |
+|  $16$          | $2*3*2*2*5$ <1>             |
+|  $32$          | $2*3*2*2*5*7$ <1>           |
+|  $64$          | $2*3*2*2*5*7*3*3$ <2>       |
+|  $128$         | $2*3*2*2*5*7*3*3*11$ <1>    |
 
 > For 16 factors the number works out to be 120 (just like the example!). For numbers shown in the questions, sieving the prime takes some time, I also found it helpful to use a binary heap for speeding up finding the next smallest factors.
 
-+ Python
+### Python
 
 ~~~python
 #! /usr/bin/env python
@@ -97,7 +93,6 @@ def euler_500():
         heappush(heap, comb(h.n, 2*h.c, h.nc*h.nc))
 
     return mult
-
 
 if __name__ == '__main__':
     print(euler_500())

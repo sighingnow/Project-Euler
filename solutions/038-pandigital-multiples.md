@@ -1,9 +1,5 @@
----
-title: Problem 38. Pandigital multiples
-author: He Tao
-date: 2015-02-08
-layout: post
----
+Problem 38. Pandigital multiples
+==================================
 
 ## 题目
 
@@ -39,11 +35,13 @@ What is the largest 1 to 9 pandigital 9-digit number that can be formed as the c
 
 ## 题解
 
-分析：首先，要找最大的数，那么用来拼接的项应当尽量少，n大于1，那么最少两项。枚举即可。
-
 答案(answer): 932718654
 
-+ Python
+### 分析
+
+首先，要找最大的数，那么用来拼接的项应当尽量少，n大于1，那么最少两项。枚举即可。
+
+### Python
 
 ~~~python
 #! /usr/bin/env python
