@@ -194,6 +194,7 @@ $endif$
 \else
   \usepackage[unicode=true,linktoc=all,CJKbookmarks=true]{hyperref}
 \fi
+\usepackage{makeidx}
 \usepackage{titlesec}
 \hypersetup{breaklinks=true,
             bookmarks=true,
@@ -233,15 +234,9 @@ $if(lang)$
 \fi
 $endif$
 
-\vspace{0.5em}
-
 $if(title)$
-\title{\huge $title$$if(subtitle)$\\\vspace{0.5em}{\large $subtitle$}$endif$\vspace{3cm}}
+\title{\huge $title$$if(subtitle)$\\\vspace{0.5em}{\large $subtitle$}$endif$}
 $endif$
-
-% $if(author)$
-% \author{$for(author)$$author$$sep$ \and $endfor$}
-% $endif$
 
 $if(author)$
 \author{$for(author)$$author$$sep$ \and $endfor$}
@@ -259,12 +254,25 @@ $endfor$
 
 \begin{document}
 $if(title)$
-{\let\newpage\relax\maketitle}
-% \maketitle
+% {\let\newpage\relax\maketitle}
+\maketitle
 $endif$
 
+\thispagestyle{empty}
+\mbox{}\vfill
+\begin{center}
+Copyright He Tao 2015-2016.
+
+This work is licensed under a \href{Creative Commons Attribution-Noncommercial-No Derivative Works 3.0
+Unported License}{http://creativecommons.org/licenses/by-nc-nd/3.0/}. The license text is available at:
+\end{center}
+
+\begin{center}
+\url{http://creativecommons.org/licenses/by-nc-nd/3.0/}
+\end{center}
+
 \renewcommand{\contentsname}{目\qquad 录}
-\newpage
+\phantomsection
 \tableofcontents
 \thispagestyle{empty}
 \newpage
@@ -277,9 +285,7 @@ $endif$
 
 $for(include-before)$
 $include-before$
-
 $endfor$
-
 
 $if(toc)$
 {
@@ -288,6 +294,7 @@ $if(toc)$
 \tableofcontents
 }
 $endif$
+
 $if(lot)$
 \listoftables
 $endif$
@@ -316,6 +323,6 @@ $if(biblatex)$
 $endif$
 $for(include-after)$
 $include-after$
-
 $endfor$
+
 \end{document}
