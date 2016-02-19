@@ -3,23 +3,23 @@ Problem 39. Integer right triangles
 
 ## 题目
 
-If p is the perimeter of a right angle triangle with integral length sides, {a,b,c}, there are exactly three solutions for p = 120.
+If $p$ is the perimeter of a right angle triangle with integral length sides, $\{a, b, c\}$, there are exactly three solutions for $p = 120$.
 
-{20,48,52}, {24,45,51}, {30,40,50}
+$$\{20, 48, 52\}, \{24, 45, 51\}, \{30, 40, 50\}$$
 
-For which value of p ≤ 1000, is the number of solutions maximised?
+For which value of $p \le 1000$, is the number of solutions maximised?
 
 [Problem 39. Integer right triangles](https://projecteuler.net/problem=39 "Problem 39")
 
 ## 翻译
 
-如果p是一个直角三角形的周长，三角形的三边长{a,b,c}都是整数。对于p = 120一共有三组解：
+如果 $p$ 是一个直角三角形的周长，三角形的三边长 $\{a, b, c\}$ 都是整数。对于 $p = 120$ 一共有三组解：
 
-{20,48,52}, {24,45,51}, {30,40,50}
+$$\{20, 48, 52\}, \{24, 45, 51\}, \{30, 40, 50\}$$
 
-对于1000以下的p中，哪一个能够产生最多的解？
+对于 $1000$ 以下的 $p$ 中，哪一个能够产生最多的解？
 
-[题目39：如果p是直角三角形{a,b,c}的周长，1000以下的p中哪一个具有最多的解？](http://pe.spiritzhang.com/index.php/2011-05-11-09-44-54/40-39pabc1000p "题目39")
+[题目39：如果 $p$ 是直角三角形 $\{a, b, c\}$ 的周长，$1000$ 以下的 $p$ 中哪一个具有最多的解？](http://pe.spiritzhang.com/index.php/2011-05-11-09-44-54/40-39pabc1000p "题目39")
 
 ## 题解
 
